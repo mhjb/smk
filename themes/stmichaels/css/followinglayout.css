@@ -1,0 +1,37 @@
+#leftcontent {
+	float: left;
+	height: 150px;
+	width: 300px;
+	margin-top: 10px;
+}
+#rightcontent {
+	float: right;
+	height: 150px;
+	width: 590px;
+	margin-top: 10px;
+}
+#morecontent {
+	height: 100px;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#content {
+	height: 220px;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 15px;
+}
+#followscrollbox {
+	height: 90px;
+	width: 575px;
+	overflow:auto;
+	margin-top:15px;
+	padding-right: 15px;
+}

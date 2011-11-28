@@ -1,0 +1,59 @@
+@charset "UTF-8";
+a:link {
+	color: #a4998c;
+}
+#apDiv1 {
+	position:absolute;
+	left:261px;
+	top:576px;
+	width:146px;
+	height:133px;
+	z-index:2;
+}
+#bibleapDiv {
+	position:absolute;
+	left:760px;
+	top:533px;
+	width:256px;
+	height:163px;
+	z-index:1;
+	margin-left: 150px;
+}
+#content {
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 15px;
+	height: 200px;
+}
+#morecontent {
+	height: 50px;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#leftcontent {
+	float: left;
+	height: 200px;
+	width: 300px;
+	margin-top: 10px;
+}
+#rightcontent {
+	float: right;
+	height: 200px;
+	width: 580px;
+	margin-top: 10px;
+}
+#connectingscrollbox {
+	height: 145px;
+	width: 575px;
+	padding-right: 15px;
+	overflow:auto;
+	margin-top: 15px;
+}

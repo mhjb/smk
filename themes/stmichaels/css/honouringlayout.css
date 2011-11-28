@@ -1,0 +1,37 @@
+#leftcontent {
+	float: left;
+	height: 150px;
+	width: 300px;
+	padding: 0px;
+	margin: 0px;
+}
+#rightcontent {
+	height: 150px;
+	width: 590px;
+	float: right;
+}
+#honourscrollbox {
+	width: 575px;
+	height: 90px;
+	overflow:auto;
+	padding-right:15px;
+	margin-top: 15px;
+}
+#morecontent {
+	height: 100px;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#content {
+	height: 220px;
+	width: 890px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 15px;
+}

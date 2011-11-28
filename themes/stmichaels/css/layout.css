@@ -1,0 +1,142 @@
+#box {
+	height: 778px;
+	width: 1050px;
+	margin-right: auto;
+	margin-left: auto;
+	background: url(../images/backgroundwithshadow.png) no-repeat center top;
+}
+#photobox {
+	height: 300px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+body {
+	background: #d1d1d1;
+	margin:0;
+	padding:0;
+}
+#menu {
+	height: 50px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding:20px 15px 15px;
+}
+.following {
+	margin-left: 60px;
+}
+.engaging {
+	margin-left: 60px;
+}
+.connecting {
+	margin-left: 60px;
+}
+
+.latest {
+	margin-left: 60px;
+	margin-bottom: 6px;
+	margin-top: 20px;
+}
+.honouring {
+	margin-top: 8px;
+	margin-left: 230px;
+}
+#footer {
+	height: 50px;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+}
+#footerleft {
+	float: left;
+	height: 50px;
+	width: 500px;
+	padding-left: 15px;
+}
+#footerright {
+	float: right;
+	height: 40px;
+	width: 200px;
+	margin-right: 15px;
+}
+.footer-align {
+	margin-right: auto;
+	margin-left: auto;
+}
+.titlealignment {
+	margin-top: 4px;
+	margin-left: 5px;
+}
+#titlebox {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.logospace {
+	margin-left: 200px;
+}
+table {
+	border-width: 0px;
+	border-style: none;
+}
+tr {
+	border-width: 0px;
+	border-style: none;
+}
+#footersegments {
+	float: left;
+	height: 50px;
+	width: 260px;
+	text-align: right;
+}
+#searchwrapper {
+width:200px; /*follow your image's size*/
+height:40px;/*follow your image's size*/
+background-image:url(../images/searchbox.png);
+background-repeat:no-repeat; /*important*/
+padding:0px;
+margin:0px;
+position:relative; /*important*/
+}
+ 
+#searchwrapper form { display:inline ; }
+ 
+.searchbox {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top:4px;
+left:9px;
+width:150px;
+height:28px;
+}
+ 
+.searchbox_submit {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position:absolute; /*important*/
+top:4px;
+left:150px;
+width:32px;
+height:28px;
+}
+.nolink:link {
+color:#FFF;
+text-decoration:underline;
+visited:#FFF;
+active:#FFF;
+hover:#FFF
+}
+#maincontent {
+	width: 562px;
+	padding-right: 15px;
+}
+#maincontent2 {
+	width: 515px;
+	padding-right: 20px;
+}
+.logospace2 {
+	margin-left: 260px;
+}

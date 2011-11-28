@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/* CSS Document */
+#values {
+	height: 30px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 4px;
+}
+#titlecontent {
+	height: 220px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: none;
+}
+#kelburnvillage {
+	width: 996px;
+	margin-right: 28px;
+	margin-left: auto;
+}
+.pastoralandothers {
+	margin-right: 1px;
+	margin-bottom: 3px;
+}
+.valuecorrection {
+	margin-bottom: 8px;
+	margin-right: 1px;
+}
+#regiontoshow2 {
+	position:absolute;
+	left:178px;
+	top:46px;
+	width:675px;
+	height:690px;
+	z-index:2;
+	margin-bottom: 50px;
+	margin-left: 150px;
+	visibility: hidden;
+}
+#churchapDiv {
+	position:absolute;
+	left:193px;
+	top:588px;
+	width:202px;
+	height:103px;
+	z-index:2;
+	margin-left: 200px;
+}
+#biblicalvalue{
+	
+	left:93px;
+	top:419px;
+	width:923px;
+	height:69px;
+	z-index:4;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#missionalapDiv {
+	position:absolute;
+	left:387px;
+	top:413px;
+	width:923px;
+	height:45px;
+	z-index:5;
+	margin-left: ;
+	margin-right:200px;
+	visibility: hidden;
+}
+#pastoralapDiv {
+	position:absolute;
+	left:95px;
+	top:419px;
+	width:922px;
+	height:47px;
+	z-index:8;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#prayerfulapDiv {
+	position:absolute;
+	left:95px;
+	top:419px;
+	width:920px;
+	height:50px;
+	z-index:7;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#spiritualapDiv {
+	position:absolute;
+	left:94px;
+	top:419px;
+	width:920px;
+	height:76px;
+	z-index:10;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#faithfulapDiv {
+	position:absolute;
+	left:96px;
+	top:419px;
+	width:922px;
+	height:42px;
+	z-index:11;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#joyfulapDiv {
+	position:absolute;
+	left:96px;
+	top:419px;
+	width:921px;
+	height:42px;
+	z-index:12;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#passionateapDiv {
+	position:absolute;
+	left:96px;
+	top:419px;
+	width:921px;
+	height:41px;
+	z-index:13;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#generousapDiv {
+	position:absolute;
+	left:95px;
+	top:419px;
+	width:921px;
+	height:39px;
+	z-index:14;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#hopefulapDiv {
+	position:absolute;
+	left:95px;
+	top:419px;
+	width:921px;
+	height:38px;
+	z-index:15;
+	margin-left: 165px;
+	visibility: hidden;
+}
+#sign2apDiv {
+	position:absolute;
+	left:104px;
+	top:642px;
+	width:74px;
+	height:60px;
+	z-index:13;
+	margin-left: 150px;
+}
+#churcheastendapDiv {
+	position:absolute;
+	left:111px;
+	top:238px;
+	width:452px;
+	height:466px;
+	z-index:14;
+	visibility: hidden;
+	margin-left: 150px;
+}
+a:link {
+	color: #666;
+}
+.hopeful {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#regiontoshow1 {
+	position:absolute;
+	left:261px;
+	top:321px;
+	width:366px;
+	height:444px;
+	z-index:3;
+	visibility: hidden;
+}
+.Welcome {
+	margin-top: 60px;
+}
+#textonphoto {
+	position:absolute;
+	left:256px;
+	top:365px;
+	width:400px;
+	height:35px;
+	z-index:14;
+}
+#apDiv1 {
+	position:absolute;
+	left:256px;
+	top:419px;
+	width:2px;
+	height:62px;
+	z-index:15;
+}
+#inclusiveapDiv {
+	position:absolute;
+	left:260px;
+	top:421px;
+	width:773px;
+	height:51px;
+	z-index:9;
+	visibility: hidden;
+}
+
+#showy {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.missional {
+	background:#fff;
+	display:none; /*--Hides by default--*/
+	padding:5px;
+	position:absolute;
+	z-index:1000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.biblical {
+	background:#fff;
+	display:none; /*--Hides by default--*/
+	padding:5px;
+	position:absolute;
+	z-index:1000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
