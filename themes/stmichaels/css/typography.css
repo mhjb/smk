@@ -1,3 +1,10 @@
+#menu a {
+	font: normal 18px FrizQuaNo2D, Tahoma, Geneva, sans-serif;
+	text-transform: lowercase;
+	text-decoration: none;
+	font-weight: light;
+}
+
 .footertext {
 	font: normal 13px/18px Tahoma, Geneva, sans-serif;
 	text-transform: none;
