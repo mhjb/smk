@@ -59,14 +59,13 @@ a:hover {
 			<a href="connecting" ><img src="$ThemeDir/images/menu/connecting.png" alt="connecting" name="connecting" width="89" height="19" border="0" class="connecting" id="connecting" title="How to get in touch and our friends"/></a>
 			<a href="main"><img src="$ThemeDir/images/menu/home.png" alt="home" width="45" height="15" border="0" class="latest" id="home" title="For in case you get lost..."/></a>
 		</div>
+		<% if SlideshowImages %>
 		<div id="photobox">
-			<img src="$ThemeDir/images/following/followingphoto(Sundayschool).jpg" width="900" height="300" alt="following slideshow" />
-			<img src="$ThemeDir/images/following/followingphoto(baptism).jpg" width="900" height="300" alt="following slideshow" />
-			<img src="$ThemeDir/images/following/followingphoto(ramseyhomegroup).jpg" width="900" height="300" alt="following slideshow" />
-			<img src="$ThemeDir/images/following/followingphoto(homeC).jpg" width="900" height="300" alt="following slideshow" />
-			<img src="$ThemeDir/images/following/followingphoto(meredith&amp;roger).jpg" width="900" height="300" alt="Following Slideshow" />
-			<img src="$ThemeDir/images/following/followingphoto(wgroup).jpg" width="900" height="300" alt="following slideshow" />
+			<% control SlideshowImages %>
+			<img src="$URL" width="900" height="300" alt="following slideshow" />
+			<% end_control %>
 		</div>
+		<% end_if %>
 		<div id="titlebox">
 			<img src="$ThemeDir/images/followingtext.png" alt="Quote from D" width="888" height="80" border="0" usemap="#Map" class="titlealignment" />
 			<map name="Map" id="Map" title="Click to find out more about Dietrich Bonhoeffer">

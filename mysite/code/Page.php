@@ -6,6 +6,19 @@ class Page extends SiteTree {
 
 	public static $has_one = array(
 	);
+	
+	/**
+	 * Return the SectionPage that this belongs to
+	 */
+	function SectionPage() {
+		$parent = $this->Parent();
+		while($parent && $parent->ID && !($parent instanceof SectionPage)) $parent = $parent->Parent();
+		if($parent && $parent->ID) return $parent;
+	}
+	
+	function SlideshowImages() {
+		if($s = $this->SectionPage()) return $s->SlideshowImages();
+	}
 
 }
 class Page_Controller extends ContentController {
