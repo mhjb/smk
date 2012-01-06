@@ -1,10 +1,29 @@
 #box {
-	height: 778px;
 	width: 1050px;
 	margin-right: auto;
 	margin-left: auto;
-	background: url(../images/backgroundwithshadow.png) no-repeat center top;
+	position: relative;
+	background: url(../images/backgroundwithshadow-middle.png) repeat-y center top;
+	padding-bottom: 30px;
 }
+#box-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1050px;
+	height: 30px;
+	background: url(../images/backgroundwithshadow-top.png) no-repeat center top;
+}
+#box-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1050px;
+	height: 30px;
+	background: url(../images/backgroundwithshadow-bottom.png) no-repeat center bottom;
+}
+
+
 #photobox {
 	height: 300px;
 	width: 900px;

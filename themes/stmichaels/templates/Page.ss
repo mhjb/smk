@@ -51,6 +51,8 @@ a:hover {
 
 <body class="highlight">
 	<div id="box">
+		<!-- these are to aid styling -->
+		<div id="box-top">&nbsp;</div><div id="box-bottom">&nbsp;</div>
 		<div id="menu">
 			<a href="latest"><img src="$ThemeDir/images/menu/latest.png" alt="latest" name="latest" width="39" height="15" border="0" class="latest" id="latest" title="Latest happenings..."/></a>
 			<a href="honouring"><img src="$ThemeDir/images/menu/honouring.png" alt="honouring" name="honouring" width="82" height="20" border="0" class="honouring" id="honouring" title="Our Services"/></a>
@@ -96,9 +98,12 @@ a:hover {
 		</div>
       </div>
     </div>
+
+	  <div id="morecontent"><img src="$ThemeDir/images/connecting/snail.jpg" width="900" height="38" alt="snail" />
+	  </div>
+
   </div>
-  <div id="morecontent"><img src="$ThemeDir/images/connecting/snail.jpg" width="900" height="38" alt="snail" />
-  </div>
+
 </div>
 <div id="footer">
   <div class="footertext" id="footerleft"> &copy; Copyright of St Michael's Anglican Church, Kelburn, Wellington, NZ, $Now.Year.<br />
