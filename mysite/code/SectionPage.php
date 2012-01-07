@@ -6,6 +6,14 @@ class SectionPage extends RedirectorPage {
 	);
 	
 	/**
+	 * Update CMS
+	 */
+	function getCMSFields() {
+		$fields = Page::getCMSFields();
+		return $fields;
+	}
+	
+	/**
 	 * Override redirection link
 	 */
 	function redirectionLink() {

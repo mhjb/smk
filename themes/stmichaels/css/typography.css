@@ -1,10 +1,8 @@
-#menu a {
-	font: normal 18px FrizQuaNo2D, Tahoma, Geneva, sans-serif;
-	text-transform: lowercase;
-	text-decoration: none;
-	font-weight: light;
+@font-face {
+	font-family: 'FrizQuaNo2D';
+	src: url('../webfonts/181492_0.eot');
+	src: url('../webfonts/181492_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/181492_0.woff') format('woff'),url('../webfonts/181492_0.ttf') format('truetype');
 }
-
 .footertext {
 	font: normal 13px/18px Tahoma, Geneva, sans-serif;
 	text-transform: none;
@@ -84,4 +82,21 @@ h4 {
 .smallitalicp {
 	font-size: 12px;
 	font-style: italic;
+}
+
+/**
+ * These are used for pieces of blurb text at the top of the page
+ */
+h5 {
+	font: normal 28px/28px "FrizQuaNo2D", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #A4998C;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	letter-spacing: 0px;
+}
+h6 {
+	font: normal 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #A4998C;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }

@@ -11,7 +11,7 @@ class Page extends SiteTree {
 	 * Return the SectionPage that this belongs to
 	 */
 	function SectionPage() {
-		$parent = $this->Parent();
+		$parent = $this;
 		while($parent && $parent->ID && !($parent instanceof SectionPage)) $parent = $parent->Parent();
 		if($parent && $parent->ID) return $parent;
 	}
