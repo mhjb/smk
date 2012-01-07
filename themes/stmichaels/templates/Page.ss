@@ -35,16 +35,6 @@
 	height:133px;
 	z-index:2;
 }
-a:link {
-	color: #a4998c;
-}
-
-a:visited {
-	color: #aeb8d1;
-}
-a:hover {
-	color: #aeb8d1;
-}
 -->
 </style>
 </head>
@@ -99,7 +89,7 @@ a:hover {
   </div>
 
 </div>
-<div id="footer">
+<div id="footer" class="typography">
   <div class="footertext" id="footerleft"> &copy; Copyright of St Michael's Anglican Church, Kelburn, Wellington, NZ, $Now.Year.<br />
 Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>.</div>
   <div class="footertext" id="footersegments"><a class="nolink" href="sitemap.html" >Site Map</a></div>
