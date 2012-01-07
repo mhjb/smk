@@ -58,34 +58,8 @@
 			<% end_control %>
 		</div>
 		<% end_if %>
-  <div id="content">
-	$SectionPage.Content
-
-	<% if Menu(2) %>
-	<div id="leftcontent">
-		<ul>
-		<% control Menu(2) %>
-		<% if LinkOrCurrent = current %>
-			<li class="highlight">$MenuTitle</li>
-		<% else %>
-			<li><a href="$Link">$MenuTitle</a></li>
-		<% end_if %>
-		<% end_control %>
-		</ul>
-	</div>
-	<% end_if %>
-	
-	<div id="rightcontent">
-		<h2>$Title</h2>
-		<div id="followscrollbox">
-			$Content
-		</div>
-      </div>
-    </div>
-
-	  <div id="morecontent"><img src="$ThemeDir/images/connecting/snail.jpg" width="900" height="38" alt="snail" />
-	  </div>
-
+		
+		$Layout
   </div>
 
 </div>
