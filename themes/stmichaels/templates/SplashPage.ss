@@ -73,7 +73,7 @@ function MM_effectAppearFade(targetElement, duration, from, to, toggle)
 <div id="content">
 <img src="$ThemeDir/images/titleimage.jpg" alt="St Michael's  Welcome Page" width="1000" height="751" border="0" usemap="#Map2" class="welcomeimage" />
 <map name="Map2" id="Map2">
-  <area shape="rect" coords="294,134,709,457" href="hmo" alt="Enter to St Mic's Website" />
+  <area shape="rect" coords="294,134,709,457" href="main" alt="Enter to St Mic's Website" />
   <area shape="circle" coords="883,506,32" href="#" />
   <area shape="poly" coords="616,634,647,632,649,652,641,665,667,713,646,722,608,706,575,672,547,683,524,656,563,650,580,617,590,614,615,634" href="#" />
 </map>
