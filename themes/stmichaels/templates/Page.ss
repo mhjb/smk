@@ -44,12 +44,13 @@
 		<!-- these are to aid styling -->
 		<div id="box-top">&nbsp;</div><div id="box-bottom">&nbsp;</div>
 		<div id="menu">
-			<a href="latest"><img src="$ThemeDir/images/menu/latest.png" alt="latest" name="latest" width="39" height="15" border="0" class="latest" id="latest" title="Latest happenings..."/></a>
-			<a href="honouring"><img src="$ThemeDir/images/menu/honouring.png" alt="honouring" name="honouring" width="82" height="20" border="0" class="honouring" id="honouring" title="Our Services"/></a>
-			<a href="following" ><img src="$ThemeDir/images/menu/following2.png" alt="following" name="following" width="75" height="20" border="0" class="following" id="following" title="Our Study groups and pastoral care matters" /></a>
-			<a href="engaging"><img src="$ThemeDir/images/menu/engaging.png" alt="engaging" name="engaging" width="72" height="19" border="0" class="engaging" id="engaging" title="Local and global mission"/></a>
-			<a href="connecting" ><img src="$ThemeDir/images/menu/connecting.png" alt="connecting" name="connecting" width="89" height="19" border="0" class="connecting" id="connecting" title="How to get in touch and our friends"/></a>
-			<a href="main"><img src="$ThemeDir/images/menu/home.png" alt="home" width="45" height="15" border="0" class="latest" id="home" title="For in case you get lost..."/></a>
+			<% control Menu(1) %>
+			<% if LinkOrSection = section %>
+			<a href="$Link"><img src="$Top.ThemeDir/images/menu/{$URLSegment}2.png" alt="$MenuTitle" name="$URLSegment" border="0" class="$URLSegment" id="$URLSegment" title="$Title"/></a>
+			<% else %>
+			<a href="$Link"><img src="$Top.ThemeDir/images/menu/{$URLSegment}.png" hoversrc="$ThemeDir/images/menu/{$URLSegment}2.png" alt="$MenuTitle" name="$URLSegment" border="0" class="$URLSegment" id="$URLSegment" title="$Title"/></a>
+			<% end_if %>
+			<% end_control %>
 		</div>
 		<% if SectionPage.SlideshowImages %>
 		<div id="photobox">
