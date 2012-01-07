@@ -3,32 +3,33 @@
 	src: url('../webfonts/181492_0.eot');
 	src: url('../webfonts/181492_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/181492_0.woff') format('woff'),url('../webfonts/181492_0.ttf') format('truetype');
 }
-.footertext {
+
+.typography .footertext {
 	font: normal 13px/18px Tahoma, Geneva, sans-serif;
 	text-transform: none;
 	color: #FFF;
 	text-align: left;
 	margin-top: 6px;
 }
-.centreallign {
+.typography .centreallign {
 	text-align: center;
 }
-.footertitles {
+.typography .footertitles {
 	font: 14px Tahoma, Geneva, sans-serif;
 	color: #666;
 }
-.values_text {
+.typography .values_text {
 	text-transform: none;
 	font: normal 30px/25px Verdana, Geneva, sans-serif;
 	color: #889CB5;
 }
-h1 {
+.typography h1 {
 	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;
 	margin-top: 0px;
 	margin-bottom: 20px;
 }
-h2 {
+.typography h2 {
 	font: 20px/15px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #aeb8d1;
 	padding-top: 0px;
@@ -36,7 +37,7 @@ h2 {
 	margin-bottom: 0px;
 	
 }
-p {
+.typography p {
 	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;
 	text-align: left;
@@ -44,7 +45,7 @@ p {
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
-li {
+.typography li {
 	font: normal 14px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;
 	margin: 0px;
@@ -52,49 +53,68 @@ li {
 	text-align: left;
 	
 }
-ul {
+.typography ul {
 	margin-top: 2px;
 	padding-top: 0px;
 }
-h3 {
+.typography h3 {
 	font: bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;
 }
-.morelink {
+.typography .morelink {
 	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-h4 {
+.typography h4 {
 	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #aeb8d1;
 	margin-bottom: 10px;
 }
-.highlight {
+.typography .highlight {
 	color: #aeb8d1;
 	font-weight: bolder;
 }
-.foottage {
+.typography .foottage {
 	font-size: 9px;
 	font-weight: bold;
 }
-.spaceaboveh1 {
+.typography .spaceaboveh1 {
 	margin-top: 15px;
 }
-.smallitalicp {
+.typography .smallitalicp {
 	font-size: 12px;
 	font-style: italic;
 }
+.typography a {
+	color: #aeb8d1;
+	text-decoration: none;
+}
+.typography a:visited {
+/*	color: #aeb8d1;*/
+}
+.typography a:hover {
+	text-decoration: underline;
+}
+
 
 /**
  * These are used for pieces of blurb text at the top of the page
  */
-h5 {
+.typography h5 {
 	font: normal 28px/28px "FrizQuaNo2D", "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #A4998C;
 	margin-top: 0px;
 	margin-bottom: 20px;
 	letter-spacing: 0px;
 }
-h6 {
+	.typography h5 .small {
+		font-size: 18px;
+	}
+	/* Use the italic function to show text in a colour */
+	.typography h5 em, .typography h5 em  {
+		font-variant: normal;
+		color: #aeb8d1;
+	}
+.typography h6 {
 	font: normal 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #A4998C;
 	margin-top: 0px;
