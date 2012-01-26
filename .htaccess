@@ -4,10 +4,15 @@
 	Deny from all
 	Allow from 127.0.0.1
 </Files>
-
+<Files README.md>
+	Order deny,allow
+	Deny from all
+	Allow from 127.0.0.1
+</Files>
 <Files web.config>
 	Order deny,allow
 	Deny from all
+	Allow from 127.0.0.1
 </Files>
 
 ErrorDocument 404 /assets/error-404.html
