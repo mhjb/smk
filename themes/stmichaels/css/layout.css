@@ -1,5 +1,6 @@
 #box {
 	width: 1050px;
+	height: 756px; 
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
@@ -22,6 +23,13 @@
 	height: 30px;
 	background: url(../images/backgroundwithshadow-bottom.png) no-repeat center bottom;
 }
+#snail {
+	position: absolute;
+	top: 720px; 
+	width: 1050px;
+	height: 30px;
+	text-align: center; 
+	}
 
 
 #photobox {

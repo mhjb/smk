@@ -27,5 +27,6 @@
 	<% end_if %>
 	
 	<div id="morecontent">
-		<% if SectionPage.BottomContent %>$SectionPage.BottomContent<% else %>&nbsp;<% end_if %>
+		
+	<!--	<% if SectionPage.BottomContent %>$SectionPage.BottomContent<% else %>&nbsp;<% end_if %> -->
 	</div>

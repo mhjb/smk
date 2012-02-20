@@ -52,30 +52,25 @@ body {
 }
 -->
 </style>
-<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
-<script type="text/javascript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_effectAppearFade(targetElement, duration, from, to, toggle)
-{
-	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
-}
-//-->
-</script>
+<% require themedCSS(slimbox2) %>
+<% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
+<% require javascript(themes/stmichaels/js/slimbox2.js) %>
+<script> lbos = {
+	overlayOpacity: 0.5,
+	overlayFadeDuration: 100,
+	resizeDuration: 1,
+	imageFadeDuration: 100,
+	captionAnimationDuration: 1
+}; </script>
 </head>
 
 <body>
 <div id="content">
 <img src="$ThemeDir/images/titleimage.jpg" alt="St Michael's  Welcome Page" width="1000" height="751" border="0" usemap="#Map2" class="welcomeimage" />
 <map name="Map2" id="Map2">
-  <area shape="rect" coords="294,134,709,457" href="main" alt="Enter to St Mic's Website" />
-  <area shape="circle" coords="883,506,32" href="#" />
-  <area shape="poly" coords="616,634,647,632,649,652,641,665,667,713,646,722,608,706,575,672,547,683,524,656,563,650,580,617,590,614,615,634" href="#" />
+  <area shape="rect" coords="294,134,709,457" href="main/" alt="Enter to St Mic's Website" />
+  <area shape="circle" coords="883,506,32" onmouseover="jQuery.slimbox('$ThemeDir/images/kingdom-of-heaven-maori.jpg', '', lbos)" />
+  <area shape="poly" coords="616,634,647,632,649,652,641,665,667,713,646,722,608,706,575,672,547,683,524,656,563,650,580,617,590,614,615,634" onmouseover="jQuery.slimbox('$ThemeDir/images/kingdom-of-heaven-english.png','',lbos)" />
 </map>
 </div>
 </body>

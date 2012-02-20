@@ -7,7 +7,7 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #000;
+	background-color: black;
 	cursor: pointer;
 }
 
@@ -15,18 +15,18 @@
 	position: absolute;
 	z-index: 9999;
 	overflow: hidden;
-	background-color: #fff;
+/*	background-color: white; */
 }
 
 .lbLoading {
-	background: #fff url(loading.gif) no-repeat center;
+/*	background: #fff url(loading.gif) no-repeat center; */
 }
 
 #lbImage {
 	position: absolute;
 	left: 0;
 	top: 0;
-	border: 10px solid #fff;
+/* border: 10px solid #fff; */
 	background-repeat: no-repeat;
 }
 
@@ -60,7 +60,7 @@
 	color: #666;
 	line-height: 1.4em;
 	text-align: left;
-	border: 10px solid #fff;
+/*	border: 10px solid #fff; */
 	border-top-style: none;
 }
 

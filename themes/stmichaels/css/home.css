@@ -7,12 +7,12 @@
 	margin-left: auto;
 	padding-left: 4px;
 }
-	#values a {
+	#values span {
 		font: 22px "Trebuchet MS", Arial, Helvetica, sans-serif;
 		color: #a4998c;
 		text-decoration: none;
 	}
-	#values a:hover {
+	#values span:hover {
 		color: #aeb8d1;
 		text-decoration: none;
 	}

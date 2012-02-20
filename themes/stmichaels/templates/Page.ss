@@ -3,7 +3,7 @@
 <head>
 <% base_tag %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Following - Sunday School</title>
+<title>$Title &ndash; $SiteConfig.Title</title>
 <% require themedCSS(layout) %>
 <% require themedCSS(jquery.jscrollpane) %>
 <% require themedCSS(jquery.jscrollpane.lozenge) %>
@@ -42,7 +42,9 @@
 <body class="highlight">
 	<div id="box">
 		<!-- these are to aid styling -->
-		<div id="box-top">&nbsp;</div><div id="box-bottom">&nbsp;</div>
+		<div id="box-top">&nbsp;</div><div id=""></div>
+		<div id="snail"><img src="$ThemeDir/images/connecting/snail.jpg" /></div>
+		<div id="box-bottom">&nbsp;</div>
 		<div id="menu">
 			<% control Menu(1) %>
 			<% if LinkOrSection = section %>
@@ -65,7 +67,7 @@
 
 </div>
 <div id="footer" class="typography">
-  <div class="footertext" id="footerleft"> &copy; Copyright of St Michael's Anglican Church, Kelburn, Wellington, NZ, $Now.Year.<br />
+  <div class="footertext" id="footerleft"> &copy; $Now.Year St Michael&rsquo;s Anglican Church, Kelburn, Wellington, New Zealand.<br />
 Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>.</div>
   <div class="footertext" id="footersegments"><a class="nolink" href="sitemap.html" >Site Map</a></div>
   <div id="footerright">
