@@ -38,6 +38,14 @@
 	margin-right: auto;
 	margin-left: auto;
 }
+
+#fb-link {
+	position: absolute;
+	right: 84px;
+	top: 342px;
+	z-index: 100;	}
+
+
 body {
 	background: #d1d1d1;
 	margin:0;
