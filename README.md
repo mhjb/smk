@@ -13,8 +13,13 @@ Once you have those two pieces of software:
 
  * Check out the repository into your server's web-root
  * Copy `_ss_environment.sample.php` to `_ss_environment.php`, and fill out the details
+ * Add these lines to _ss_environment.php:
+ define('SS_DEFAULT_ADMIN_USERNAME', 'admin');
+ define('SS_DEFAULT_ADMIN_PASSWORD', 'password');
  * Extract the `SS_stmichaels.sql.gz` into a new database called `SS_stmichaels`.
  * Extract assets.tar.gz to a /assets directory in your web-root.
  * Visit the site
 
 For more information about working with SilverStripe, see [http://doc.silverstripe.org/](http://doc.silverstripe.org/).
+
+If you have added content to the site, you will need to export the updated database and/or assets folder into the /tools directory before commiting.

@@ -50,5 +50,9 @@ class Page_Controller extends ContentController {
 /*		Requirements::themedCSS('layout'); 
 		Requirements::themedCSS('typography'); 
 		Requirements::themedCSS('form');  */
+		
+		//not sure if this is in the right place but it seems to work:		
+		PrettyPhoto::include_code();
+
 	}
 }
