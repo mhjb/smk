@@ -1,4 +1,4 @@
-@charset "UTF-8";
+	@charset "UTF-8";
 /* CSS Document */
 #values {
 	height: 30px;
@@ -17,10 +17,9 @@
 		text-decoration: none;
 	}
 #values-blurb {
-	height: 80px;
+	height: 60px;
 	margin-left: 75px;
 	margin-right: 75px;
-
 	font: 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #aeb8d1;
 }

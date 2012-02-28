@@ -44,7 +44,7 @@
 	<div id="box">
 		<!-- these are to aid styling -->
 		<div id="box-top">&nbsp;</div><div id=""></div>
-		<div id="snail"><img src="$ThemeDir/images/connecting/snail.jpg" /></div>
+<!--		<div id="snail"><img src="$ThemeDir/images/connecting/snail.jpg" /></div> -->
 		<div id="box-bottom">&nbsp;</div>
 		<div id="menu">
 			<% control Menu(1) %>
@@ -60,6 +60,9 @@
 			<% control SectionPage.SlideshowImages %>
 			<img src="$URL" width="900" height="300" alt="following slideshow" />
 			<% end_control %>
+		</div>
+		<div id="fb-link">
+			<a href="http://www.facebook.com/StMichaelsKelburn"><img src="$Top.ThemeDir/images/icon_facebook.png" alt="Visit St Michael's on Facebook" /></a>
 		</div>
 		<% end_if %>
 		
