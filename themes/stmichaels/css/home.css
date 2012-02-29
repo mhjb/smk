@@ -24,6 +24,11 @@
 	color: #aeb8d1;
 }
 
+#valueswrapper{
+	display: block;
+	clear: both;
+}
+
 #titlecontent {
 	width: 600px;
 	margin-left: 75px;
@@ -31,10 +36,57 @@
 	background-image: none;
 }
 #kelburnvillage {
-	width: 996px;
-	margin-right: 28px;
-	margin-left: auto;
+	width: 999px;
+	height: 124px;
+	display: block;
+	margin-left: 25px;
+	background: url('../images/kelburnvillage.jpg');
+	position: relative;
 }
+
+#sign1{
+	position: absolute;
+	top: 70px;
+	left: 90px;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+#flag{
+	position: absolute;
+	top: 0;
+	left: 370px;
+	width: 30px;
+	height: 30px;
+}
+
+#sign2{
+	position: absolute;
+	top: 70px;
+	left: 195px;
+	height: 30px;
+	width: 30px;
+}
+
+
+#sign3{
+	position: absolute;
+	top: 70px;
+	left: 370px;
+	height: 30px;
+	width: 30px;
+}
+	
+#fblink{
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	height: 124px;
+	width: 599px;
+}
+
+
 .pastoralandothers {
 	margin-right: 1px;
 	margin-bottom: 3px;
