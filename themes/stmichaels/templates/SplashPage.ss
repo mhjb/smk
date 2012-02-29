@@ -56,7 +56,7 @@ body {
 </head>
 
 <body>
-<div id="content">
+<div id="content";>
 <img src="$ThemeDir/images/titleimage.jpg" alt="St Michael's  Welcome Page" width="1000" height="751" border="0" usemap="#Map2" class="welcomeimage" />
 <map name="Map2" id="Map2">
   <area shape="rect" coords="294,134,709,457" href="main/" alt="Enter to St Mic's Website" />

@@ -1,4 +1,9 @@
+
 $(document).ready(function(){
+	$("body").css("display", "none");
+    $("body").fadeIn(2000);
+
+
 	$('#followscrollbox').jScrollPane({
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
@@ -18,4 +23,6 @@ $(document).ready(function(){
 			$img.attr('src',$img.attr('nonhoversrc'));
 		});
 	});
+	 
+
 });

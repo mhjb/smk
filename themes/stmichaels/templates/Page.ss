@@ -38,13 +38,15 @@
 }
 -->
 </style>
+
+
 </head>
 
 <body class="highlight">
+	
 	<div id="box">
 		<!-- these are to aid styling -->
 		<div id="box-top">&nbsp;</div><div id=""></div>
-<!--		<div id="snail"><img src="$ThemeDir/images/connecting/snail.jpg" /></div> -->
 		<div id="box-bottom">&nbsp;</div>
 		<div id="menu">
 			<% control Menu(1) %>
@@ -67,6 +69,24 @@
 		<% end_if %>
 		
 		$Layout
+		
+		<% if SectionTitle = Following %>
+			<div id="snail"></div>
+		<% end_if %>
+		
+		<% if SectionTitle = Connecting %>
+			<div id="snail"></div>
+		<% end_if %>
+		
+		<% if SectionTitle = Latest %>
+			<div id="snailSign">
+				<a href="#" title="Roster" id="snailRosterLink">&nbsp;</a>
+				<a href="$Top.ThemeDir/images/ssign.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/ssign.png')" rel="prettyPhoto" id="snailSignLink">&nbsp;</a>
+			</div>
+		<% end_if %>
+		
+		
+		</div>
   </div>
 
 </div>

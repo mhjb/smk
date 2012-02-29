@@ -1,5 +1,5 @@
   <div id="content" class="typography">
-	$SectionPage.Content
+  $SectionPage.Content
 
 	<% if Menu(2) %>
 	<div id="leftcontent">
@@ -14,7 +14,16 @@
 		</ul>
 	</div>
 	<div id="rightcontent">
+		
+		<% if SectionTitle = Latest %>
+			<div id="backBlock">
+				<a href="./latest" id="backArrow"></a>
+				<a href="./latest" id="backText">Back to Latest page</a>
+			</div>
+		<% end_if %>
+		
 		<h2>$Title</h2>
+
 		<div id="followscrollbox">
 			$Content
 		</div>
@@ -26,7 +35,4 @@
 	$Form
 	<% end_if %>
 	
-	<div id="morecontent">
-		
-	<!--	<% if SectionPage.BottomContent %>$SectionPage.BottomContent<% else %>&nbsp;<% end_if %> -->
-	</div>
+

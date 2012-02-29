@@ -12,8 +12,21 @@ class Page extends SiteTree {
 	 */
 	function SectionPage() {
 		$parent = $this;
-		while($parent && $parent->ID && !($parent instanceof SectionPage)) $parent = $parent->Parent();
-		if($parent && $parent->ID) return $parent;
+		while($parent && $parent->ID && !($parent instanceof SectionPage)) $parent = $parent->Parent();		
+		if($parent && $parent->ID) return $parent;	
+	}
+	
+	/**
+	 * Return the title of the SectionPage this belongs to
+	 */
+	function SectionTitle(){
+		$parent = $this;
+		while($parent && $parent->ID && !($parent instanceof SectionPage)) $parent = $parent->Parent();		
+		if($parent && $parent->ID) return $parent->title;		
+	}
+
+	function PageTitle() {
+		return $this->title;
 	}
 	
 	function SlideshowImages() {

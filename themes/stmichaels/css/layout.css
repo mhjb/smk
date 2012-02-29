@@ -23,14 +23,6 @@
 	height: 30px;
 	background: url(../images/backgroundwithshadow-bottom.png) no-repeat center bottom;
 }
-#snail {
-	position: absolute;
-	top: 720px; 
-	width: 1050px;
-	height: 30px;
-	text-align: center; 
-	}
-
 
 #photobox {
 	height: 300px;
@@ -172,6 +164,57 @@ hover:#FFF
 	width: 515px;
 	padding-right: 20px;
 }
+#snail{
+	position: absolute;
+	bottom: 25px; 
+	left: 75px;
+	height: 38px;
+	width: 900px;
+	background: url(../images/connecting/snail.jpg)  no-repeat;
+}
+
+#snailSign{
+	position: absolute;
+	bottom: 25px; 
+	left: 70px;
+	height: 225px;
+	width: 910px;
+	background: url(../images/latestsnailsign.jpg)  no-repeat;
+}
+
+#snailRosterLink{
+	display: block;
+	width: 180px;
+	height: 100px;
+	margin: 70px 0 0 190px;
+	float: left;
+}
+
+#snailSignLink{
+	display: block;	
+	width: 240px;
+	height: 225px;
+	float: right;
+}
+
+#backArrow {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url('../images/backarrow.png') center center no-repeat;
+	float: left;
+}
+
+#backText{
+	display: block;
+	padding-top: 10px;	
+}
+
+#backBlock{
+	float: right;
+	width: 200px;
+}
+
 .logospace2 {
 	margin-left: 260px;
 }
