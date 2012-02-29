@@ -18,7 +18,6 @@
 		<% if SectionTitle = Latest %>
 			<div id="backBlock">
 				<a href="./latest" id="backArrow"></a>
-				<a href="./latest" id="backText">Back to Latest page</a>
 			</div>
 		<% end_if %>
 		

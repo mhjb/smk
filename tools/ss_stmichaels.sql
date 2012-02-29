@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 29, 2012 at 02:16 AM
+-- Generation Time: Feb 29, 2012 at 04:57 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -285,17 +285,17 @@ CREATE TABLE IF NOT EXISTS `homepageword` (
 --
 
 INSERT INTO `homepageword` (`ID`, `ClassName`, `Created`, `LastEdited`, `Word`, `Blurb`, `PageID`) VALUES
-(1, 'HomePageWord', '2012-01-07 14:36:51', '2012-01-07 14:36:51', 'biblical', 'deeply immersed in the great themes of the Bible, which show us what living as the people of God means; thoroughly knowledgeable of scripture,including the detailed complexity and richness of the text. Together, we wrestle with Gods Word to us and are hungry for His wisdom.', 2),
-(2, 'HomePageWord', '2012-01-07 14:36:51', '2012-01-07 14:38:35', 'missional', 'outward looking in all we say and do. We tell others (in Kelburn and beyond) the good news about Jesus so that they become his followers. We call our society back to the ways of God.', 2),
-(3, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'prayerful', NULL, 2),
-(4, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'pastoral', NULL, 2),
-(5, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'inclusive', NULL, 2),
-(6, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'spiritual', NULL, 2),
-(7, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'faithful', NULL, 2),
-(8, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'joyful', NULL, 2),
-(9, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'passionate', NULL, 2),
-(10, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'generous', NULL, 2),
-(11, 'HomePageWord', '2012-01-07 14:38:35', '2012-01-07 14:38:35', 'hopeful', NULL, 2);
+(1, 'HomePageWord', '2012-01-07 14:36:51', '2012-02-06 01:19:09', 'biblical', 'Deeply immersed in the great themes of the Bible, which show us what living as the people of God means; thoroughly knowledgeable of scripture, including the detailed complexity and richness of the text. Together, we wrestle with God’s Word to us and are hungry for His wisdom.', 2),
+(2, 'HomePageWord', '2012-01-07 14:36:51', '2012-02-06 01:21:05', 'missional', 'Outward looking in all we say and do. We tell others (in Kelburn and beyond) the good news about Jesus so that they become his followers. We call our society back to the ways of God.', 2),
+(3, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 01:21:05', 'prayerful', 'Faithful and earnest prayers. We intercede for our world, our community and our church. We listen attentively and look expectantly for God to act. ', 2),
+(4, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 01:21:05', 'pastoral', 'Caring and hospitable. We seek to minister God’s grace and healing to all. ', 2),
+(5, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 00:58:12', 'inclusive', 'Open to others and appreciative of the gift each one brings to our life together. We celebrate our unity in diversity as a reflection of the very character of the God we worship.', 2),
+(6, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 00:58:12', 'spiritual', 'A people of the Holy Spirit, connected to God, set apart to bring God glory. ', 2),
+(7, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 01:11:15', 'faithful', 'Constant in our service of God, trusting in God’s care and orthodox in what we hold to be true.', 2),
+(8, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 01:21:05', 'joyful', 'Deeply grateful for all that God has done in Jesus Christ &mdash; most especially for forgiveness, reconciliation, the renewal of our world and the gift of eternal life. This gives us ‘the joy of the Lord’ which is our strength.\n', 2),
+(9, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 01:11:15', 'passionate', 'Vitally concerned with God’s work upon the earth. We are focused on the task of bearing witness to the present and coming reign of God.', 2),
+(10, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 00:59:42', 'generous', 'Giving &ndash; of ourselves, our time and our money. We want to be as generous to others as God is to us.', 2),
+(11, 'HomePageWord', '2012-01-07 14:38:35', '2012-02-06 01:21:05', 'hopeful', 'Known as those who have a ‘proper confidence’ in God’s future, and who work for that future even while they wait for the one who brings healing in his wings and will make all things new.', 2);
 
 -- --------------------------------------------------------
 
@@ -356,7 +356,7 @@ CREATE TABLE IF NOT EXISTS `member` (
 --
 
 INSERT INTO `member` (`ID`, `ClassName`, `Created`, `LastEdited`, `FirstName`, `Surname`, `Email`, `Password`, `RememberLoginToken`, `NumVisit`, `LastVisited`, `Bounced`, `AutoLoginHash`, `AutoLoginExpired`, `PasswordEncryption`, `Salt`, `PasswordExpiry`, `LockedOutUntil`, `Locale`, `FailedLoginCount`, `DateFormat`, `TimeFormat`) VALUES
-(1, 'Member', '2011-11-28 21:21:06', '2012-02-27 20:48:34', 'Default Admin', NULL, 'admin', '514a872c44fd31734bce151668046ad6f02dd391', NULL, 8, '2012-02-29 14:15:26', 0, NULL, NULL, 'sha1_v2.4', '2c5f422753fb3aff287684d6cdadd351c2554270', NULL, NULL, 'en_US', 0, 'MM/dd/yyyy', 'hh:mm a');
+(1, 'Member', '2011-11-28 21:21:06', '2012-02-27 20:48:34', 'Default Admin', NULL, 'admin', '514a872c44fd31734bce151668046ad6f02dd391', NULL, 8, '2012-02-29 16:57:01', 0, NULL, NULL, 'sha1_v2.4', '2c5f422753fb3aff287684d6cdadd351c2554270', NULL, NULL, 'en_US', 0, 'MM/dd/yyyy', 'hh:mm a');
 
 -- --------------------------------------------------------
 
@@ -569,7 +569,7 @@ CREATE TABLE IF NOT EXISTS `redirectorpage_versions` (
   KEY `RecordID` (`RecordID`),
   KEY `Version` (`Version`),
   KEY `LinkToID` (`LinkToID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `redirectorpage_versions`
@@ -591,7 +591,16 @@ INSERT INTO `redirectorpage_versions` (`ID`, `RecordID`, `Version`, `Redirection
 (13, 8, 9, 'Internal', NULL, 0),
 (14, 9, 14, 'Internal', NULL, 0),
 (15, 9, 15, 'Internal', NULL, 0),
-(16, 9, 16, 'Internal', NULL, 0);
+(16, 9, 16, 'Internal', NULL, 0),
+(17, 6, 8, 'Internal', NULL, 0),
+(18, 6, 9, 'Internal', NULL, 0),
+(19, 6, 10, 'Internal', NULL, 0),
+(20, 6, 11, 'Internal', NULL, 0),
+(21, 8, 10, 'Internal', NULL, 0),
+(22, 8, 11, 'Internal', NULL, 0),
+(23, 6, 12, 'Internal', NULL, 0),
+(24, 6, 13, 'Internal', NULL, 0),
+(25, 6, 14, 'Internal', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -611,7 +620,7 @@ CREATE TABLE IF NOT EXISTS `sectionpage` (
 
 INSERT INTO `sectionpage` (`ID`, `BottomContent`) VALUES
 (6, NULL),
-(8, 'WHAT IS THIS'),
+(8, NULL),
 (7, NULL),
 (3, NULL),
 (9, NULL);
@@ -634,7 +643,7 @@ CREATE TABLE IF NOT EXISTS `sectionpage_live` (
 
 INSERT INTO `sectionpage_live` (`ID`, `BottomContent`) VALUES
 (6, NULL),
-(8, 'WHAT IS THIS'),
+(8, NULL),
 (7, NULL),
 (3, NULL),
 (9, NULL);
@@ -654,7 +663,7 @@ CREATE TABLE IF NOT EXISTS `sectionpage_versions` (
   UNIQUE KEY `RecordID_Version` (`RecordID`,`Version`),
   KEY `RecordID` (`RecordID`),
   KEY `Version` (`Version`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `sectionpage_versions`
@@ -676,7 +685,16 @@ INSERT INTO `sectionpage_versions` (`ID`, `RecordID`, `Version`, `BottomContent`
 (13, 8, 9, 'WHAT IS THIS'),
 (14, 9, 14, NULL),
 (15, 9, 15, NULL),
-(16, 9, 16, NULL);
+(16, 9, 16, NULL),
+(17, 6, 8, NULL),
+(18, 6, 9, NULL),
+(19, 6, 10, NULL),
+(20, 6, 11, NULL),
+(21, 8, 10, 'WHAT IS THIS'),
+(22, 8, 11, NULL),
+(23, 6, 12, NULL),
+(24, 6, 13, NULL),
+(25, 6, 14, NULL);
 
 -- --------------------------------------------------------
 
@@ -704,7 +722,7 @@ CREATE TABLE IF NOT EXISTS `siteconfig` (
 --
 
 INSERT INTO `siteconfig` (`ID`, `ClassName`, `Created`, `LastEdited`, `Title`, `Tagline`, `Theme`, `CanViewType`, `CanEditType`, `CanCreateTopLevelType`) VALUES
-(1, 'SiteConfig', '2011-11-28 21:21:06', '2011-11-28 21:21:06', 'Your Site Name', 'your tagline here', NULL, 'Anyone', 'LoggedInUsers', 'LoggedInUsers');
+(1, 'SiteConfig', '2011-11-28 21:21:06', '2012-02-05 23:46:56', 'St Michael''s Anglican Church, Kelburn', NULL, 'stmichaels', 'Anyone', 'LoggedInUsers', 'LoggedInUsers');
 
 -- --------------------------------------------------------
 
@@ -759,7 +777,7 @@ CREATE TABLE IF NOT EXISTS `siteconfig_viewergroups` (
 
 CREATE TABLE IF NOT EXISTS `sitetree` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `ClassName` enum('SiteTree','Page','HomePage','SplashPage','ErrorPage','RedirectorPage','VirtualPage','SectionPage') CHARACTER SET utf8 DEFAULT 'SiteTree',
+  `ClassName` enum('SiteTree','MorePage','Page','HomePage','SplashPage','ErrorPage','RedirectorPage','VirtualPage','SectionPage') CHARACTER SET utf8 DEFAULT 'SiteTree',
   `Created` datetime DEFAULT NULL,
   `LastEdited` datetime DEFAULT NULL,
   `URLSegment` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
@@ -788,7 +806,7 @@ CREATE TABLE IF NOT EXISTS `sitetree` (
   KEY `ParentID` (`ParentID`),
   KEY `URLSegment` (`URLSegment`),
   KEY `ClassName` (`ClassName`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=44 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=46 ;
 
 --
 -- Dumping data for table `sitetree`
@@ -796,12 +814,12 @@ CREATE TABLE IF NOT EXISTS `sitetree` (
 
 INSERT INTO `sitetree` (`ID`, `ClassName`, `Created`, `LastEdited`, `URLSegment`, `Title`, `MenuTitle`, `Content`, `MetaTitle`, `MetaDescription`, `MetaKeywords`, `ExtraMeta`, `ShowInMenus`, `ShowInSearch`, `HomepageForDomain`, `ProvideComments`, `Sort`, `HasBrokenFile`, `HasBrokenLink`, `Status`, `ReportClass`, `CanViewType`, `CanEditType`, `ToDo`, `Version`, `ParentID`) VALUES
 (1, 'SplashPage', '2011-11-28 21:21:06', '2012-01-07 14:58:01', 'home', 'St Michael''s', NULL, NULL, 'St Michael''s', NULL, NULL, NULL, 0, 0, NULL, 0, 1, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 8, 0),
-(7, 'SectionPage', '2011-11-28 21:30:17', '2012-01-17 15:20:30', 'engaging', 'Engaging', NULL, '<h5>"The Church is the only cooperative society in the world <em>that</em> exists for the benefit of those who are not its members." <a class="small" href="http://en.wikipedia.org/wiki/William_Temple_(bishop)">Archbishop William Temple</a></h5>\n<h6>St. Mic''s sees itself as very much part of its local community. We also see ourselves as citizens not just of our city and nation, but of God''s world...(more)</h6>', 'Engaging', NULL, NULL, NULL, 1, 1, NULL, 0, 5, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 7, 0),
-(8, 'SectionPage', '2011-11-28 21:30:17', '2012-02-28 23:15:52', 'following', 'Following', NULL, '<h5>"Christianity without the living Jesus Christ remains necessarily a Christianity without discipleship; and a Christianity without discipleship is always just an idea, a myth." <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">Dietrich Bonhoeffer</a></h5>\n<h6>On following the living Jesus, Bonhoeffer also wrote... (<a style="color: #a4998c;" href="http://www.lilyemo.co.nz/work/popup">more</a>)</h6>', 'Following', NULL, NULL, NULL, 1, 1, NULL, 0, 4, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 9, 0),
+(7, 'SectionPage', '2011-11-28 21:30:17', '2012-02-27 23:10:28', 'engaging', 'Engaging', NULL, '<h5>"The Church is the only cooperative society in the world that exists for the benefit of those who are not its members." <a class="small" href="http://en.wikipedia.org/wiki/William_Temple_(bishop)">Archbishop William Temple</a></h5>\n<h6>St. Mic''s sees itself as very much part of its local community. We also see ourselves as citizens not just of our city and nation, but of God''s world...(more)</h6>', 'Engaging', NULL, NULL, NULL, 1, 1, NULL, 0, 5, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 9, 0),
+(8, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:39:49', 'following', 'Following', NULL, '<h5>‘Christianity without the living Jesus Christ remains necessarily a Christianity without discipleship; and a Christianity without discipleship is always just an idea, a myth.’ <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">Dietrich Bonhoeffer</a></h5>\n<h6>On following the living Jesus, Bonhoeffer also wrote... (<a href="[sitetree_link id=44]">more</a>)</h6>', 'Following', NULL, NULL, NULL, 1, 1, NULL, 0, 4, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 11, 0),
 (9, 'SectionPage', '2011-11-28 21:31:27', '2012-02-29 00:35:30', 'latest', 'Latest', NULL, '<p style="text-align: right;"><a href="http://www.facebook.com/StMichaelsKelburn"><img class="left" src="themes/stmichaels/images/icon_facebook.png" width="21"/></a> Keep up to date with St Michaels on Facebook</p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 16, 0),
-(2, 'HomePage', '2011-11-28 21:21:06', '2012-01-07 14:38:35', 'main', 'Home', NULL, '<h5>Welcome to <em>St Michael and All Angels</em> online.<br/>We think St Mic''s is a really <em>special place</em>.<br/>Have a browse around and <em>find out why</em>. If you want to know more don''t hesitate to <a href="[sitetree_link id=24]">get in touch</a>.</h5>', 'Home', NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 5, 0),
-(3, 'SectionPage', '2011-11-28 21:21:06', '2012-01-07 14:26:14', 'connecting', 'Connecting', NULL, '<h5>For general info about St. Mic''s have a good scroll throw below. Also don''t forget to check out our <a href="[sitetree_link id=9]">latest page</a> for current events.<br/>Contact us to find out more.</h5>', 'Connecting', NULL, NULL, NULL, 1, 1, NULL, 0, 6, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 4, 0),
-(6, 'SectionPage', '2011-11-28 21:30:17', '2012-01-07 14:26:14', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it - people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread... (more)</h5>\n<h6>Our services reflect the "mixed economy" of our parish - the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 7, 0),
+(2, 'HomePage', '2011-11-28 21:21:06', '2012-02-29 04:42:12', 'main', 'Home', NULL, '<h5>Welcome to <em>St Michael and All Angels</em> online.<br/>We think St Mic’s is a really <em>special place</em>.<br/>Have a browse around and <em>find out why</em>. If you want to know more don''t hesitate to <a href="[sitetree_link id=24]">get in touch</a>.</h5>', 'Home', NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 6, 0),
+(3, 'SectionPage', '2011-11-28 21:21:06', '2012-02-27 22:42:44', 'connecting', 'Connecting', NULL, '<h5>For general info about St. Mic''s have a good scroll through below. Also don''t forget to check out our <a href="[sitetree_link id=9]">latest page</a> for current events.<br/>Contact us to find out more.</h5>', 'Connecting', NULL, NULL, NULL, 1, 1, NULL, 0, 6, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 5, 0),
+(6, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:48:09', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread … <a class="small" href="[sitetree_link id=45]">(more)</a></h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 14, 0),
 (4, 'ErrorPage', '2011-11-28 21:21:06', '2012-01-07 14:26:14', 'page-not-found', 'Page not found', NULL, '<p>Sorry, it seems you were trying to access a page that doesn''t exist.</p><p>Please check the spelling of the URL you were trying to access and try again.</p>', NULL, NULL, NULL, NULL, 0, 0, NULL, 0, 8, 0, 0, 'New page', NULL, 'Inherit', 'Inherit', NULL, 1, 0),
 (5, 'ErrorPage', '2011-11-28 21:21:06', '2012-01-07 14:26:14', 'server-error', 'Server error', NULL, '<p>Sorry, there was a problem with handling your request.</p>', NULL, NULL, NULL, NULL, 0, 0, NULL, 0, 9, 0, 0, 'New page', NULL, 'Inherit', 'Inherit', NULL, 1, 0),
 (10, 'Page', '2011-11-28 21:36:56', '2012-01-07 14:26:14', 'sunday-school', 'Sunday School', NULL, '<p>St Mic''s has a growing ministry among toddlers and children. In           addition to special programmes, the Sunday School meets every Sunday during           the 10am service. Lessons, music and activities follow the church year and           parallel the Gospel talks at the weekly services.</p>\n<p>Parent involvement is           encouraged.  Once a month (usually on the third Sunday), children stay in           church for a more informal family orientated service. Email <a href="mailto:info@stmichaels.org.nz">Barb</a> to find out more.</p>\n<h4>What''s the Story?</h4>\n<p>What''s the story? is our special Sunday School programme geared to children up           to five years (older children meet seperately). What''s the story? is based upon elements of           the Montessori method and has been primarily developed by Jerome Berryman.           You can find a good overview in the book Young Children in Worship, by           Jerome Berryman and Sonja M. Stewart (this is the book is also used to begin         the classes). There are several key elements to What''s the story?</p>\n<ul><li>An emphasis on the telling of Biblical stories, using             three-dimensional figures and materials, in a way that is engaging and             memorable for the children. </li>\n<li> Carefully worded questions to encourage even very young children in             thoughtful responses. </li>\n<li>Options for the creative response of the child at every lesson:             re-telling the story themselves, drawing, playing with carefully chosen             materials and other craft activities. </li>\n<li>An emphasis on having a respectful, ordered classroom, leaving room             for everyone to participate; the belief that every child has something to             contribute. </li>\n<li>An emphasis on the Church Year and the weekly use of brief             liturgical phrases for the children to learn along with a weekly song. </li>\n<li> Encouraging parents and other interested church members to be             involved in the teaching. </li>\n</ul><p>What''s the story? is best suited to children             aged 2 - 5.  Younger             children from about 18 months can attend with a parent if the parent feels             that the child will be able to give attention.</p>', 'Sunday Schools', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 3, 8),
@@ -836,7 +854,9 @@ INSERT INTO `sitetree` (`ID`, `ClassName`, `Created`, `LastEdited`, `URLSegment`
 (39, 'Page', '2012-01-06 12:26:59', '2012-01-07 14:26:14', 'mikel-news', 'MiKel News', NULL, '<p>Our parish broadsheet, MiKel News goes out to around 1200 homes,           plus around 100 individuals and other outlets. Each issue is a combo of           news, adverts and something to challenge. Both issues linked at the bottom of           this page are good examples of MiKel News and tell you a lot about our           community and who we are.</p>\n<p>We''re always looking for stories and we''re           especially looking for someone to put issues together. Have a read and if           you''re inspired <a href="mailto:allangels@stmichaels.org.nz">get   in touch.</a></p>\n<p><a href="PDFs/mikelnews_xmas2010.pdf"><img class="logoallign" src="themes/stmichaels/images/miklnewsxmas10logo.png" alt="Mikel News Xmas20110" width="89" height="32"/></a><a href="PDFs/mikelnews-easter2011.pdf"><img class="logoallign" src="themes/stmichaels/images/mikelnewsspringlogo.png" alt="Mikel News Spring 2011" width="89" height="33"/></a></p>', 'MiKel News', NULL, NULL, NULL, 1, 1, NULL, 0, 8, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 5, 7),
 (40, 'Page', '2012-02-28 23:38:09', '2012-02-29 00:46:13', 'sermons', 'Sermons', NULL, '<p><a href="#"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Sermon #1</a></p>\n<p><a href="#"> </a></p>\n<p><a href="#"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Sermon #2</a></p>\n<p><a href="#"> </a></p>\n<p><a href="#"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Sermon #3</a></p>', 'Sermons', NULL, NULL, NULL, 1, 1, NULL, 0, 1, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 3, 9),
 (41, 'Page', '2012-02-28 23:48:24', '2012-02-28 23:52:39', 'mikel-news', 'MiKel News', NULL, '<p><a style="text-decoration: underline; font-family: ''Trebuchet MS'', Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;" href="assets/pdfs/mikelnews-easter2011.pdf" target="_blank"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Easter 2011 edition</a></p>\n<p><a style="font-family: ''Trebuchet MS'', Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;" href="assets/pdfs/mikelnews_xmas2010.pdf" target="_blank"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Christmas 2010 editio</a>n</p>\n<p><a href="assets/pdfs/mikel news spring 2009.pdf" target="_blank"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Spring 2009 edition</a> </p>\n<p> </p>\n<p> </p>', 'MiKel News', NULL, NULL, NULL, 1, 1, NULL, 0, 1, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 3, 9),
-(42, 'Page', '2012-02-28 23:49:56', '2012-02-28 23:50:45', 'archive', 'Archive', NULL, '<p>Archive of old news coming soon...</p>', 'Archive', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 9);
+(42, 'Page', '2012-02-28 23:49:56', '2012-02-28 23:50:45', 'archive', 'Archive', NULL, '<p>Archive of old news coming soon...</p>', 'Archive', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 9),
+(44, 'MorePage', '2012-02-29 04:07:13', '2012-02-29 04:22:19', 'bonhoeffer', 'Thus spake Bonhoeffer', 'Bonhoeffer', '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>\n<p>From <em>The Cost of Discipleship</em>, p.59</p>', 'Bonhoeffer', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 6, 8),
+(45, 'MorePage', '2012-02-29 04:46:11', '2012-02-29 04:47:53', 'worship', 'Worship', NULL, '<p>According to Romans 12 verses 1 and 2, worship is about offering up the whole of our lives to God. The language here is about temple sacrifice but Paul locates our ‘true spiritual worship’, outside the temple in everyday life.</p>\n<p>So what are we doing each Sunday when we assemble together? Why is it important? One writer has summed it up as ‘parable and encounter’ — telling the story and meeting God together... Why not come to one of our services and find out for yourself?</p>', 'Worship', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 6);
 
 -- --------------------------------------------------------
 
@@ -892,7 +912,7 @@ CREATE TABLE IF NOT EXISTS `sitetree_linktracking` (
   PRIMARY KEY (`ID`),
   KEY `SiteTreeID` (`SiteTreeID`),
   KEY `ChildID` (`ChildID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `sitetree_linktracking`
@@ -900,7 +920,9 @@ CREATE TABLE IF NOT EXISTS `sitetree_linktracking` (
 
 INSERT INTO `sitetree_linktracking` (`ID`, `SiteTreeID`, `ChildID`, `FieldName`) VALUES
 (1, 3, 9, 'Content'),
-(16, 2, 24, 'Content');
+(23, 2, 24, 'Content'),
+(18, 8, 44, 'Content'),
+(24, 6, 45, 'Content');
 
 -- --------------------------------------------------------
 
@@ -910,7 +932,7 @@ INSERT INTO `sitetree_linktracking` (`ID`, `SiteTreeID`, `ChildID`, `FieldName`)
 
 CREATE TABLE IF NOT EXISTS `sitetree_live` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `ClassName` enum('SiteTree','Page','HomePage','SplashPage','ErrorPage','RedirectorPage','VirtualPage','SectionPage') CHARACTER SET utf8 DEFAULT 'SiteTree',
+  `ClassName` enum('SiteTree','MorePage','Page','HomePage','SplashPage','ErrorPage','RedirectorPage','VirtualPage','SectionPage') CHARACTER SET utf8 DEFAULT 'SiteTree',
   `Created` datetime DEFAULT NULL,
   `LastEdited` datetime DEFAULT NULL,
   `URLSegment` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
@@ -939,7 +961,7 @@ CREATE TABLE IF NOT EXISTS `sitetree_live` (
   KEY `ParentID` (`ParentID`),
   KEY `URLSegment` (`URLSegment`),
   KEY `ClassName` (`ClassName`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=46 ;
 
 --
 -- Dumping data for table `sitetree_live`
@@ -947,10 +969,10 @@ CREATE TABLE IF NOT EXISTS `sitetree_live` (
 
 INSERT INTO `sitetree_live` (`ID`, `ClassName`, `Created`, `LastEdited`, `URLSegment`, `Title`, `MenuTitle`, `Content`, `MetaTitle`, `MetaDescription`, `MetaKeywords`, `ExtraMeta`, `ShowInMenus`, `ShowInSearch`, `HomepageForDomain`, `ProvideComments`, `Sort`, `HasBrokenFile`, `HasBrokenLink`, `Status`, `ReportClass`, `CanViewType`, `CanEditType`, `ToDo`, `Version`, `ParentID`) VALUES
 (1, 'SplashPage', '2011-11-28 21:21:06', '2012-01-07 14:57:58', 'home', 'St Michael''s', NULL, NULL, 'St Michael''s', NULL, NULL, NULL, 0, 0, NULL, 0, 1, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 7, 0),
-(6, 'SectionPage', '2011-11-28 21:30:17', '2012-01-06 12:40:27', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it - people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread... (more)</h5>\n<h6>Our services reflect the "mixed economy" of our parish - the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 7, 0),
-(8, 'SectionPage', '2011-11-28 21:30:17', '2012-02-28 08:59:39', 'following', 'Following', NULL, '<h5>"Christianity without the living Jesus Christ remains necessarily a Christianity without discipleship; and a Christianity without disciplechip is always just an idea, a myth." <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">Dietrich Bonhoeffer</a></h5>\n<h6>On following the living Jesus, Bonhoeffer also wrote... (<a style="color: #a4998c;" href="http://www.lilyemo.co.nz/work/popup">more</a>)</h6>', 'Following', NULL, NULL, NULL, 1, 1, NULL, 0, 4, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 8, 0),
-(7, 'SectionPage', '2011-11-28 21:30:17', '2012-01-06 13:19:22', 'engaging', 'Engaging', NULL, '<h5>"The Church is the only cooperative society in the world that exists for the benefit of those who are not its members." <a class="small" href="http://en.wikipedia.org/wiki/William_Temple_(bishop)">Archbishop William Temple</a></h5>\n<h6>St. Mic''s sees itself as very much part of its local community. We also see ourselves as citizens not just of our city and nation, but of God''s world...(more)</h6>', 'Engaging', NULL, NULL, NULL, 1, 1, NULL, 0, 5, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 6, 0),
-(2, 'HomePage', '2011-11-28 21:21:06', '2012-01-07 14:38:35', 'main', 'Home', NULL, '<h5>Welcome to <em>St Michael and All Angels</em> online.<br/>We think St Mic''s is a really <em>special place</em>.<br/>Have a browse around and <em>find out why</em>. If you want to know more don''t hesitate to <a href="[sitetree_link id=24]">get in touch</a>.</h5>', 'Home', NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 5, 0),
+(6, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:48:09', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread … <a class="small" href="[sitetree_link id=45]">(more)</a></h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 14, 0),
+(8, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:39:49', 'following', 'Following', NULL, '<h5>‘Christianity without the living Jesus Christ remains necessarily a Christianity without discipleship; and a Christianity without discipleship is always just an idea, a myth.’ <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">Dietrich Bonhoeffer</a></h5>\n<h6>On following the living Jesus, Bonhoeffer also wrote... (<a href="[sitetree_link id=44]">more</a>)</h6>', 'Following', NULL, NULL, NULL, 1, 1, NULL, 0, 4, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 11, 0),
+(7, 'SectionPage', '2011-11-28 21:30:17', '2012-02-27 23:10:28', 'engaging', 'Engaging', NULL, '<h5>"The Church is the only cooperative society in the world that exists for the benefit of those who are not its members." <a class="small" href="http://en.wikipedia.org/wiki/William_Temple_(bishop)">Archbishop William Temple</a></h5>\n<h6>St. Mic''s sees itself as very much part of its local community. We also see ourselves as citizens not just of our city and nation, but of God''s world...(more)</h6>', 'Engaging', NULL, NULL, NULL, 1, 1, NULL, 0, 5, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 9, 0),
+(2, 'HomePage', '2011-11-28 21:21:06', '2012-02-29 04:42:12', 'main', 'Home', NULL, '<h5>Welcome to <em>St Michael and All Angels</em> online.<br/>We think St Mic’s is a really <em>special place</em>.<br/>Have a browse around and <em>find out why</em>. If you want to know more don''t hesitate to <a href="[sitetree_link id=24]">get in touch</a>.</h5>', 'Home', NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 6, 0),
 (3, 'SectionPage', '2011-11-28 21:21:06', '2012-02-29 00:35:30', 'connecting', 'Connecting', NULL, '<h5>For general info about St. Mic''s have a good scroll throw below. Also don''t forget to check out our <a href="[sitetree_link id=9]">latest page</a> for current events.<br/>Contact us to find out more.</h5>', 'Connecting', NULL, NULL, NULL, 1, 1, NULL, 0, 6, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 4, 0),
 (9, 'SectionPage', '2011-11-28 21:31:27', '2012-02-29 00:35:30', 'latest', 'Latest', NULL, '<p style="text-align: right;"><a href="http://www.facebook.com/StMichaelsKelburn"><img class="left" src="themes/stmichaels/images/icon_facebook.png" width="21"/></a> Keep up to date with St Michaels on Facebook</p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 1, 'Published', NULL, 'Inherit', 'Inherit', NULL, 16, 0),
 (4, 'ErrorPage', '2011-11-28 21:21:06', '2011-11-28 21:21:06', 'page-not-found', 'Page not found', NULL, '<p>Sorry, it seems you were trying to access a page that doesn''t exist.</p><p>Please check the spelling of the URL you were trying to access and try again.</p>', NULL, NULL, NULL, NULL, 0, 0, NULL, 0, 8, 0, 0, 'New page', NULL, 'Inherit', 'Inherit', NULL, 1, 0),
@@ -987,7 +1009,9 @@ INSERT INTO `sitetree_live` (`ID`, `ClassName`, `Created`, `LastEdited`, `URLSeg
 (38, 'Page', '2012-01-06 12:26:58', '2012-01-06 12:33:01', 'guess-who-s-coming-for-dinner', 'Guess who''s coming for dinner?', NULL, '<p>One of the great things about being part of God’s family is celebrating its unity in diversity —“There is no longer Jew or Greek, there is no longer slave or free, there is no longer male and female; for all of you are one in Christ Jesus.” <span class="smallitalicp">Saint Paul writing to the Galatian Christians</span></p>\n<p>St Mic’s is a very diverse parish. We enjoy this and like to celebrate it. Different St. Mic’s congregations get to meet each other at parish events throughout the year (bible studies, dances, home groups, movie nights, the fair etc. etc). <em>Guess who’s coming to dinner?</em> is an initiative aimed at extending these contacts by getting to know each other better in each other’s homes. These meals are usually run two or three times a year. If you want to find out when the next <em>Guess Who’s coming to dinner</em> is happening, email <a href="mailto:info@stmichaels.org.nz">info@stmichaels.org.nz</a> — or call 04,934 9338 and leave a message.</p>', 'Guess who''s coming for dinner?', NULL, NULL, NULL, 1, 1, NULL, 0, 9, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 3, 7),
 (40, 'Page', '2012-02-28 23:38:09', '2012-02-29 00:46:13', 'sermons', 'Sermons', NULL, '<p><a href="#"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Sermon #1</a></p>\n<p><a href="#"> </a></p>\n<p><a href="#"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Sermon #2</a></p>\n<p><a href="#"> </a></p>\n<p><a href="#"><img src="themes/stmichaels/images/pdf_icon.png" width="21" height="21"/> Sermon #3</a></p>', 'Sermons', NULL, NULL, NULL, 1, 1, NULL, 0, 1, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 3, 9),
 (41, 'Page', '2012-02-28 23:48:24', '2012-02-28 23:48:55', 'mikel-news', 'MiKel News', NULL, NULL, 'MiKel News', NULL, NULL, NULL, 1, 1, NULL, 0, 1, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 9),
-(42, 'Page', '2012-02-28 23:49:56', '2012-02-28 23:50:45', 'archive', 'Archive', NULL, '<p>Archive of old news coming soon...</p>', 'Archive', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 9);
+(42, 'Page', '2012-02-28 23:49:56', '2012-02-28 23:50:45', 'archive', 'Archive', NULL, '<p>Archive of old news coming soon...</p>', 'Archive', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 9),
+(44, 'MorePage', '2012-02-29 04:07:13', '2012-02-29 04:22:19', 'bonhoeffer', 'Thus spake Bonhoeffer', 'Bonhoeffer', '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>\n<p>From <em>The Cost of Discipleship</em>, p.59</p>', 'Bonhoeffer', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 6, 8),
+(45, 'MorePage', '2012-02-29 04:46:11', '2012-02-29 04:47:53', 'worship', 'Worship', NULL, '<p>According to Romans 12 verses 1 and 2, worship is about offering up the whole of our lives to God. The language here is about temple sacrifice but Paul locates our ‘true spiritual worship’, outside the temple in everyday life.</p>\n<p>So what are we doing each Sunday when we assemble together? Why is it important? One writer has summed it up as ‘parable and encounter’ — telling the story and meeting God together... Why not come to one of our services and find out for yourself?</p>', 'Worship', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Published', NULL, 'Inherit', 'Inherit', NULL, 2, 6);
 
 -- --------------------------------------------------------
 
@@ -1002,7 +1026,7 @@ CREATE TABLE IF NOT EXISTS `sitetree_versions` (
   `WasPublished` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `AuthorID` int(11) NOT NULL DEFAULT '0',
   `PublisherID` int(11) NOT NULL DEFAULT '0',
-  `ClassName` enum('SiteTree','Page','HomePage','SplashPage','ErrorPage','RedirectorPage','VirtualPage','SectionPage') CHARACTER SET utf8 DEFAULT 'SiteTree',
+  `ClassName` enum('SiteTree','MorePage','Page','HomePage','SplashPage','ErrorPage','RedirectorPage','VirtualPage','SectionPage') CHARACTER SET utf8 DEFAULT 'SiteTree',
   `Created` datetime DEFAULT NULL,
   `LastEdited` datetime DEFAULT NULL,
   `URLSegment` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
@@ -1035,7 +1059,7 @@ CREATE TABLE IF NOT EXISTS `sitetree_versions` (
   KEY `ParentID` (`ParentID`),
   KEY `URLSegment` (`URLSegment`),
   KEY `ClassName` (`ClassName`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=187 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=205 ;
 
 --
 -- Dumping data for table `sitetree_versions`
@@ -1228,7 +1252,26 @@ INSERT INTO `sitetree_versions` (`ID`, `RecordID`, `Version`, `WasPublished`, `A
 (183, 9, 13, 1, 1, 1, 'Page', '2011-11-28 21:31:27', '2012-02-28 23:55:15', 'latest', 'Latest', NULL, '<p>St Michaels on Facebook:</p>\n<p><a href="http://www.facebook.com/StMichaelsKelburn"> <img src="themes/stmichaels/images/icon_facebook.png" width="32" height="32"/></a></p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
 (184, 9, 14, 1, 1, 1, 'SectionPage', '2011-11-28 21:31:27', '2012-02-29 00:30:58', 'latest', 'Latest', NULL, '<p>St Michaels on Facebook:</p>\n<p><a href="http://www.facebook.com/StMichaelsKelburn"> <img src="themes/stmichaels/images/icon_facebook.png" width="32" height="32"/></a></p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
 (185, 9, 15, 0, 1, 0, 'SectionPage', '2011-11-28 21:31:27', '2012-02-29 00:33:50', 'latest', 'Latest', NULL, '<p><a href="http://www.facebook.com/StMichaelsKelburn"><img class="left" src="themes/stmichaels/images/icon_facebook.png" width="21"/></a> Keep up to date with St Michaels on Facebook</p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
-(186, 9, 16, 1, 1, 1, 'SectionPage', '2011-11-28 21:31:27', '2012-02-29 00:35:30', 'latest', 'Latest', NULL, '<p style="text-align: right;"><a href="http://www.facebook.com/StMichaelsKelburn"><img class="left" src="themes/stmichaels/images/icon_facebook.png" width="21"/></a> Keep up to date with St Michaels on Facebook</p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0);
+(186, 9, 16, 1, 1, 1, 'SectionPage', '2011-11-28 21:31:27', '2012-02-29 00:35:30', 'latest', 'Latest', NULL, '<p style="text-align: right;"><a href="http://www.facebook.com/StMichaelsKelburn"><img class="left" src="themes/stmichaels/images/icon_facebook.png" width="21"/></a> Keep up to date with St Michaels on Facebook</p>', 'Latest', NULL, NULL, NULL, 1, 1, NULL, 0, 2, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(187, 6, 8, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 03:58:10', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it - people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread...</h5>\n<h6>Our services reflect the ''mixed economy'' of our parish – the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(188, 6, 9, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 03:58:48', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread...</h5>\n<h6>Our services reflect the ''mixed economy'' of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(189, 6, 10, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:00:46', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread...</h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(190, 6, 11, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:03:25', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread …</h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(191, 44, 1, 0, 1, 0, 'Page', '2012-02-29 04:07:13', '2012-02-29 04:07:13', 'new-page', 'New Page', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'New page', NULL, 'Inherit', 'Inherit', NULL, 8);
+INSERT INTO `sitetree_versions` (`ID`, `RecordID`, `Version`, `WasPublished`, `AuthorID`, `PublisherID`, `ClassName`, `Created`, `LastEdited`, `URLSegment`, `Title`, `MenuTitle`, `Content`, `MetaTitle`, `MetaDescription`, `MetaKeywords`, `ExtraMeta`, `ShowInMenus`, `ShowInSearch`, `HomepageForDomain`, `ProvideComments`, `Sort`, `HasBrokenFile`, `HasBrokenLink`, `Status`, `ReportClass`, `CanViewType`, `CanEditType`, `ToDo`, `ParentID`) VALUES
+(192, 44, 2, 1, 1, 1, 'Page', '2012-02-29 04:07:13', '2012-02-29 04:08:05', 'bonhoeffer', 'Bonhoeffer', NULL, '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>', 'Bonhoeffer', NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'Saved (new)', NULL, 'Inherit', 'Inherit', NULL, 8),
+(193, 44, 3, 1, 1, 1, 'Page', '2012-02-29 04:07:13', '2012-02-29 04:08:41', 'bonhoeffer', 'Bonhoeffer', NULL, '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>', 'Bonhoeffer', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(194, 8, 10, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:09:38', 'following', 'Following', NULL, '<h5>"Christianity without the living Jesus Christ remains necessarily a Christianity without discipleship; and a Christianity without discipleship is always just an idea, a myth." <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">Dietrich Bonhoeffer</a></h5>\n<h6>On following the living Jesus, Bonhoeffer also wrote... (<a href="[sitetree_link id=44]">more</a>)</h6>', 'Following', NULL, NULL, NULL, 1, 1, NULL, 0, 4, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(195, 44, 4, 1, 1, 1, 'Page', '2012-02-29 04:07:13', '2012-02-29 04:09:55', 'bonhoeffer', 'Bonhoeffer', NULL, '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>', 'Bonhoeffer', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 8),
+(196, 44, 5, 1, 1, 1, 'Page', '2012-02-29 04:07:13', '2012-02-29 04:14:06', 'bonhoeffer', 'Thus spake Bonhoeffer', 'Bonhoeffer', '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>\n<p>From <em>The Cost of Discipleship</em>, p.59</p>', 'Bonhoeffer', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 8),
+(197, 44, 6, 1, 1, 1, 'MorePage', '2012-02-29 04:07:13', '2012-02-29 04:22:19', 'bonhoeffer', 'Thus spake Bonhoeffer', 'Bonhoeffer', '<p>‘A Christianity in which there is only God the Father, but not Christ as a living Son actually cancels discipleship. In that case there will be trust in God, but not discipleship … Discipleship is a commitment to following Christ. Because Christ exists, he must be followed. An idea about Christ, a doctrinal system, a general religious recognition of grace or forgiveness of sins does not require discipleship. In truth, it even excludes discipleship; it is inimical to it. One enters into a relationship with an idea by way of knowledge, enthusiasm, perhaps even by carrying it out, but it is by personal obedient discipleship [that we enter into a relationship with the living Jesus].’</p>\n<p>From <em>The Cost of Discipleship</em>, p.59</p>', 'Bonhoeffer', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 8),
+(198, 8, 11, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:39:49', 'following', 'Following', NULL, '<h5>‘Christianity without the living Jesus Christ remains necessarily a Christianity without discipleship; and a Christianity without discipleship is always just an idea, a myth.’ <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">Dietrich Bonhoeffer</a></h5>\n<h6>On following the living Jesus, Bonhoeffer also wrote... (<a href="[sitetree_link id=44]">more</a>)</h6>', 'Following', NULL, NULL, NULL, 1, 1, NULL, 0, 4, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(199, 2, 6, 1, 1, 1, 'HomePage', '2011-11-28 21:21:06', '2012-02-29 04:42:12', 'main', 'Home', NULL, '<h5>Welcome to <em>St Michael and All Angels</em> online.<br/>We think St Mic’s is a really <em>special place</em>.<br/>Have a browse around and <em>find out why</em>. If you want to know more don''t hesitate to <a href="[sitetree_link id=24]">get in touch</a>.</h5>', 'Home', NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(200, 6, 12, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:45:29', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread … (<a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">more</a>)</h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(201, 6, 13, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:45:57', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread … <a class="small" href="http://en.wikipedia.org/wiki/Dietrich_Bonhoeffer">(more)</a></h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0),
+(202, 45, 1, 0, 1, 0, 'Page', '2012-02-29 04:46:11', '2012-02-29 04:46:11', 'new-page', 'New Page', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, 0, 7, 0, 0, 'New page', NULL, 'Inherit', 'Inherit', NULL, 6),
+(203, 45, 2, 1, 1, 1, 'MorePage', '2012-02-29 04:46:11', '2012-02-29 04:47:38', 'worship', 'Worship', NULL, '<p>According to Romans 12 verses 1 and 2, worship is about offering up the whole of our lives to God. The language here is about temple sacrifice but Paul locates our ‘true spiritual worship’, outside the temple in everyday life.</p>\n<p>So what are we doing each Sunday when we assemble together? Why is it important? One writer has summed it up as ‘parable and encounter’ — telling the story and meeting God together... Why not come to one of our services and find out for yourself?</p>', 'Worship', NULL, NULL, NULL, 0, 1, NULL, 0, 7, 0, 0, 'Saved (new)', NULL, 'Inherit', 'Inherit', NULL, 6),
+(204, 6, 14, 1, 1, 1, 'SectionPage', '2011-11-28 21:30:17', '2012-02-29 04:48:09', 'honouring', 'Honouring', NULL, '<h5>What a strange thing worship is when you think about it — people standing up and sitting down, throwing their arms around, saying things together, listening, singing, shaking hands, drinking wine, eating bread … <a class="small" href="[sitetree_link id=45]">(more)</a></h5>\n<h6>Our services reflect the ‘mixed economy’ of our parish — the diversity of where we live and who we are. Check out below whats on offer and try one out...</h6>', 'Honouring', NULL, NULL, NULL, 1, 1, NULL, 0, 3, 0, 1, 'Saved (update)', NULL, 'Inherit', 'Inherit', NULL, 0);
 
 -- --------------------------------------------------------
 
