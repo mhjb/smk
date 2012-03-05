@@ -2,11 +2,10 @@
 <% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
 <% require javascript(themes/stmichaels/js/home.js) %>
 
-	<div id="valueswrapper">
-		<div id="values">
-			<% control Words %><span title="$Blurb">$Word</span><% end_control %>
-		</div>
+	<div id="values">
+		<% control Words %><span title="$Blurb">$Word</span><% end_control %>
 	</div>
+
 	<div id="values-blurb"></div>
 
 	<div id="titlecontent" class="typography">

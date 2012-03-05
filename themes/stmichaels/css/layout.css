@@ -173,6 +173,13 @@ hover:#FFF
 	background: url(../images/connecting/snail.jpg)  no-repeat;
 }
 
+#snail a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-left: 675px;
+}
+
 #snailSign{
 	position: absolute;
 	bottom: 25px; 

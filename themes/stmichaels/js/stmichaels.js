@@ -23,6 +23,5 @@ $(document).ready(function(){
 			$img.attr('src',$img.attr('nonhoversrc'));
 		});
 	});
-	 
-
+	
 });

@@ -71,7 +71,7 @@
 		$Layout
 		
 		<% if SectionTitle = Following %>
-			<div id="snail"></div>
+			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkfollowing.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkfollowing.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
 		
 		<% if SectionTitle = Connecting %>

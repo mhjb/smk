@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-$('#valueswrapper')
-	.mouseover(function(){
-		alert('in');
-	})
-	.mouseout(function(){
-		alert('out');
-	});
 $('#values span	')
 	.mouseover(function() {
 		$('#values-blurb').html($(this).attr('title'));
