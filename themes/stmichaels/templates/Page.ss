@@ -64,7 +64,7 @@
 			<% end_control %>
 		</div>
 		<div id="fb-link">
-			<a href="http://www.facebook.com/StMichaelsKelburn"><img src="$Top.ThemeDir/images/icon_facebook.png" alt="Visit St Michael's on Facebook" /></a>
+			<a href="http://www.facebook.com/StMichaelsKelburn" title="Visit St Michael's on Facebook"><img src="$Top.ThemeDir/images/icon_facebook.png" /></a>
 		</div>
 		<% end_if %>
 		
@@ -93,7 +93,7 @@
 <div id="footer" class="typography">
   <div class="footertext" id="footerleft"> &copy; $Now.Year St Michael&rsquo;s Anglican Church, Kelburn, Wellington, New Zealand.<br />
 Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>.</div>
-  <div class="footertext" id="footersegments"><a class="nolink" href="sitemap.html" >Site Map</a></div>
+<!--  <div class="footertext" id="footersegments"><a class="nolink" href="sitemap.html" >Site Map</a></div>
   <div id="footerright">
     <div id="searchwrapper">
       <form action="">
@@ -101,6 +101,6 @@ Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>.</di
         <input type="image" src="$ThemeDir/images/blank.png" class="searchbox_submit" value="" />
       </form>
     </div>
-  </div>
+  </div> -->
 </div></body>
 </html>
