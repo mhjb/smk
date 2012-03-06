@@ -2,7 +2,7 @@
 
 class PrettyPhoto extends Object {
 
-	private static $themes = array("dark_rounded", "dark_square", "facebook", "light_rounded", "light_square");
+	private static $themes = array("dark_rounded", "dark_square", "facebook", "light_rounded", "light_square", "stmichaels");
 
 	protected static $theme = "";
 		static function set_theme($v) {if(!in_array($v, self::$themes)) {user_error("Please select a valid PrettyPhoto theme in PrettyPhoto::set_theme()", E_USER_WARNING);} self::$theme = $v;}
