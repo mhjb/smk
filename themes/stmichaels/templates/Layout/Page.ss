@@ -1,6 +1,11 @@
   <div id="content" class="typography">
-  $SectionPage.Content
+	<div class="moreText">
+		$SectionPage.MoreText
+	</div>
+   $SectionPage.Content
 
+  
+	
 	<% if Menu(2) %>
 	<div id="leftcontent">
 		<ul>

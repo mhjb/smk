@@ -2,7 +2,7 @@
 
 class SectionPage extends RedirectorPage {
 	public static $db = array(
-		"BottomContent" => "HTMLText"
+		"MoreText" => "HTMLText"
 	);
 	
 	/**
@@ -10,7 +10,7 @@ class SectionPage extends RedirectorPage {
 	 */
 	function getCMSFields() {
 		$fields = Page::getCMSFields();
-		$fields->addFieldToTab('Root.Content.Main', new TextField('BottomContent'), 'Content');
+		$fields->addFieldToTab('Root.Content.Main', new TextField('MoreText'), 'Content');
 		return $fields;
 	}
 	
