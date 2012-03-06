@@ -8,7 +8,7 @@
 <% require themedCSS(jquery.jscrollpane) %>
 <% require themedCSS(jquery.jscrollpane.lozenge) %>
 <% require themedCSS(typography) %>
-<% require themedCSS(followinglayout) %>
+<% require themedCSS(articleholder) %>
 <% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
 <% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
 <% require javascript(themes/stmichaels/js/jquery.jscrollpane.min.js) %>
@@ -57,35 +57,29 @@
 			<% end_if %>
 			<% end_control %>
 		</div>
-		<% if SectionPage.SlideshowImages %>
-		<div id="photobox">
-			<% control SectionPage.SlideshowImages %>
-			<img src="$URL" width="900" height="300" alt="following slideshow" />
-			<% end_control %>
-		</div>
-		<div id="fb-link">
-			<a href="http://www.facebook.com/StMichaelsKelburn" title="Visit St Michael's on Facebook"><img src="$Top.ThemeDir/images/icon_facebook.png" /></a>
-		</div>
-		<% end_if %>
 		
 		$Layout
 		
-		<% if SectionTitle = Following %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkfollowing.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkfollowing.png')" rel="prettyPhoto"></a></div>
-		<% end_if %>
+		<div id="rightMenu">
+			<ul>
+			<% control Menu(2) %>
+			<% if LinkOrCurrent = current %>
+				<li class="highlight">$MenuTitle</li>
+			<% else %>
+				<li><a href="$Link">$MenuTitle</a></li>
+			<% end_if %>
+			<% end_control %>
+			</ul>
+		</div>
 		
-		<% if SectionTitle = Connecting %>
-			<div id="snail"></div>
-		<% end_if %>
 		
-		<!--
 		<% if SectionTitle = Latest %>
 			<div id="snailSign">
 				<a href="#" title="Roster" id="snailRosterLink">&nbsp;</a>
 				<a href="$Top.ThemeDir/images/ssign.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/ssign.png')" rel="prettyPhoto" id="snailSignLink">&nbsp;</a>
 			</div>
 		<% end_if %>
-		-->
+		
 		
 		</div>
   </div>

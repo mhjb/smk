@@ -1,0 +1,1 @@
+<div id="Content" class="typography">                 <h1>$Title</h1>    $Content    <div class="newsDetails">        Posted on $Date.Nice    </div></div>

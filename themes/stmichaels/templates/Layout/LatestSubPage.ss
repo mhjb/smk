@@ -1,0 +1,1 @@
+<div id="Content" class="typography">  		<a href="javascript:history.go(-1)" id="backArrow"></a>	<h2>$Title</h2>	<div class="clear"></div>	    $Content</div>
