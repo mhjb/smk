@@ -318,7 +318,7 @@ CREATE TABLE `member` (
 
 LOCK TABLES `member` WRITE;
 /*!40000 ALTER TABLE `member` DISABLE KEYS */;
-INSERT INTO `member` VALUES (1,'Member','2011-11-28 21:21:06','2012-03-06 01:12:06','Matthew','Bartlett','admin','a70be9e67072dc8ec6d065cb3c1ea2108a525f31',NULL,9,'2012-03-06 17:09:31',0,NULL,NULL,'sha1_v2.4','2c5f422753fb3aff287684d6cdadd351c2554270',NULL,NULL,'en_US',0,'MM/dd/yyyy','hh:mm a');
+INSERT INTO `member` VALUES (1,'Member','2011-11-28 21:21:06','2012-03-06 01:12:06','Matthew','Bartlett','admin','a70be9e67072dc8ec6d065cb3c1ea2108a525f31',NULL,9,'2012-03-06 17:06:31',0,NULL,NULL,'sha1_v2.4','2c5f422753fb3aff287684d6cdadd351c2554270',NULL,NULL,'en_US',0,'MM/dd/yyyy','hh:mm a');
 /*!40000 ALTER TABLE `member` ENABLE KEYS */;
 UNLOCK TABLES;
 DROP TABLE IF EXISTS `memberpassword`;
