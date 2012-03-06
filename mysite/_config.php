@@ -18,4 +18,4 @@ SSViewer::set_theme('stmichaels');
 SiteTree::enable_nested_urls();
 
 PrettyPhoto::set_more_config("allowresize: false, 
-	opacity: 0.4");
+       opacity: 0.4");

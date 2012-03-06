@@ -179,28 +179,28 @@ hover:#FFF
 	margin-left: 675px;
 }
 
-#snailSign{
+#snailSign {
 	position: absolute;
 	bottom: 25px; 
 	left: 70px;
 	height: 225px;
 	width: 910px;
-	background: url(../images/latestsnailsign.jpg)  no-repeat;
-}
+	background: url(../images/latestsnailsign.jpg)  no-repeat; }
 
 #snailRosterLink{
 	display: block;
 	width: 180px;
 	height: 100px;
 	margin: 70px 0 0 190px;
-	float: left;
-}
+	float: left; }
 
 #snailSignLink{
-	display: block;	
-	width: 240px;
-	height: 225px;
-	float: right;
+	display: block;
+	position: absolute; 
+	width: 180px;
+	height: 110px;
+	top:60px;
+	right:33px;
 }
 
 #backArrow {
