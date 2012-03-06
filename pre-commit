@@ -1,0 +1,28 @@
+#!/bin/sh
+# Refresh the SQL schema file for inclusion within the git commit
+#
+# Move this file to stmichaels/.git/hooks/ and it will automagically do an sql dump before every commit. 
+# If you want to skip this you can go 'git commit -n [...]', or do like I do and change the filename to pre-commit.OFF
+
+DBUSER="root"
+DBPASS=""
+DB="ss_stmichaels"
+EXEPATH="C:\xampp\mysql\bin\mysqldump.exe"
+SQLPATH="tools/ss_stmichaels.sql"
+
+# If something fails, exit with status other than 0
+set -e
+	
+# first, remove our original schema
+rm -f $SQLPATH
+
+# generate a new schema
+echo -n 'dumping database... '
+exec $EXEPATH --skip-comments -u $DBUSER --password=$DBPASS $DB |sed 's$),($),\n($g' > $SQLPATH
+echo 'done'
+
+# Add the schema to the next commit
+git add $SQLPATH
+
+# Exit success
+exit 0
