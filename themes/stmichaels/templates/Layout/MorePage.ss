@@ -1,9 +1,9 @@
   <div id="content" class="typography">
   $SectionPage.Content
 
-
-	<h2>$Title</h2>
-	$Content
-	$Form
+	<a href="javascript:history.go(-1)" id="backArrow"></a><h2>$Title</h2>
+	<div id="historyscrollbox">
+		$Content
+		$Form
+	</div>
 	
-

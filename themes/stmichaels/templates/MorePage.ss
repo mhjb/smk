@@ -49,27 +49,11 @@
 		<div id="box-top">&nbsp;</div><div id=""></div>
 		<div id="box-bottom">&nbsp;</div>
 		<div id="menu">
-		 <a href="javascript:parent.history.back();"><img src="$ThemeDir/images/backarrow.png" /></a>
+			
 		</div>
 
-	
+
 		$Layout
-		
-		<% if SectionTitle = Following %>
-			<div id="snail"></div>
-		<% end_if %>
-		
-		<% if SectionTitle = Connecting %>
-			<div id="snail"></div>
-		<% end_if %>
-		
-		<% if SectionTitle = Latest %>
-			<div id="snailSign">
-				<a href="#" title="Roster" id="snailRosterLink">&nbsp;</a>
-				<a href="$Top.ThemeDir/images/ssign.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/ssign.png')" rel="prettyPhoto" id="snailSignLink">&nbsp;</a>
-			</div>
-		<% end_if %>
-		
 		
 		</div>
   </div>

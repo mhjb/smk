@@ -64,6 +64,7 @@
 				<% control SectionPage.GMGSlideshowImages %>
 					<img src="$URL" width="900" height="300" alt="following slideshow" />
 				<% end_control %>			
+
 			<% else %>	
 				<% control SectionPage.SlideshowImages %>
 					<img src="$URL" width="900" height="300" alt="following slideshow" />
@@ -82,7 +83,7 @@
 		<% end_if %>
 		
 		<% if SectionTitle = Connecting %>
-			<div id="snail"></div>
+			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
 		
 		<!--

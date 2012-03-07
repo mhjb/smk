@@ -7,6 +7,11 @@ $(document).ready(function(){
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
 	});
+	
+	$('#historyscrollbox').jScrollPane({
+		verticalDragMinHeight: 40,
+		verticalDragMaxHeight: 40,
+	});
 
 	$('#photobox').cycle({
 		fx: 	'fade',

@@ -24,6 +24,13 @@ img.left{
 	float: left;
 }
 	
+#historyscrollbox {
+	height: 600px;
+	width: 900px;
+	overflow:auto;
+	margin: 0 auto;
+	padding-rightt: 15px;
+}
 
 #box {
 	width: 1050px;

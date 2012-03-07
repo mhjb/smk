@@ -1,4 +1,4 @@
-  <div id="content" class="typography">
+<div id="content" class="typography">
 	<div class="moreText">
 		$SectionPage.MoreText
 	</div>

@@ -11,5 +11,9 @@ class MorePage extends SiteTree {
 }
  
 class MorePage_Controller extends ContentController {
-     
+	public function init() {
+		parent::init();
+		PrettyPhoto::include_code();
+
+	}	
 }
