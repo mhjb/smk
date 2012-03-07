@@ -43,8 +43,9 @@
 </head>
 
 <body class="highlight">
-	
 	<div id="box">
+	
+		
 		<!-- these are to aid styling -->
 		<div id="box-top">&nbsp;</div><div id=""></div>
 		<div id="box-bottom">&nbsp;</div>
@@ -59,9 +60,15 @@
 		</div>
 		<% if SectionPage.SlideshowImages %>
 		<div id="photobox">
-			<% control SectionPage.SlideshowImages %>
-			<img src="$URL" width="900" height="300" alt="following slideshow" />
-			<% end_control %>
+			<% if URLSegment = global-mission-group %>
+				<% control SectionPage.GMGSlideshowImages %>
+					<img src="$URL" width="900" height="300" alt="following slideshow" />
+				<% end_control %>			
+			<% else %>	
+				<% control SectionPage.SlideshowImages %>
+					<img src="$URL" width="900" height="300" alt="following slideshow" />
+				<% end_control %>			
+			<% end_if %>
 		</div>
 		<div id="fb-link">
 			<a href="http://www.facebook.com/StMichaelsKelburn" title="Visit St Michael's on Facebook"><img src="$Top.ThemeDir/images/icon_facebook.png" /></a>

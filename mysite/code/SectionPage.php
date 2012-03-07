@@ -5,6 +5,7 @@ class SectionPage extends RedirectorPage {
 		"MoreText" => "HTMLText"
 	);
 	
+	
 	/**
 	 * Update CMS
 	 */
@@ -23,12 +24,20 @@ class SectionPage extends RedirectorPage {
 		}
 	}
 	
+	function GMGSlideshowImages() {
+		$folder = File::find('section-photos/engaging/global-mission-group');
+		if($folder) {		
+			return DataObject::get("Image","\"ParentID\" = $folder->ID");
+		}
+	}
+	
 	function SlideshowImages() {
 		$folder = File::find('section-photos/' . $this->URLSegment);
 		if($folder) {
 			return DataObject::get("Image","\"ParentID\" = $folder->ID");
 		}
 	}
+
 }
 
 class SectionPage_Controller extends RedirectorPage_Controller {

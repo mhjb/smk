@@ -20,18 +20,12 @@
 	</div>
 	<div id="rightcontent">
 		
-		<% if SectionTitle = Latest %>
-			<div id="backBlock">
-				<a href="./latest" id="backArrow"></a>
-			</div>
-		<% end_if %>
-		
+				
 		<h2>$Title</h2>
 
 		<div id="followscrollbox">
 			$Content
 		</div>
-      </div>
     </div>
 	<% else %>
 	<h2>$Title</h2>

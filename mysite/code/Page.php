@@ -29,9 +29,12 @@ class Page extends SiteTree {
 		return $this->title;
 	}
 	
-	function SlideshowImages() {
+	function SlideshowImages() {	
+		
 		if($s = $this->SectionPage()) return $s->SlideshowImages();
 	}
+	
+	
 
 }
 class Page_Controller extends ContentController {

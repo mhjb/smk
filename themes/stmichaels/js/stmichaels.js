@@ -1,9 +1,8 @@
 
+
+
 $(document).ready(function(){
-	$("body").css("display", "none");
-    $("body").fadeIn(333);
-
-
+	
 	$('#followscrollbox').jScrollPane({
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
@@ -13,6 +12,12 @@ $(document).ready(function(){
 		fx: 	'fade',
 		speed: 3800
 	});
+	
+	$('#GMG-slideshow').cycle({
+		fx: 	'fade',
+		speed: 3800
+	});
+		
 	
 	$("#menu a img[hoversrc]").each(function() {
 		var $img = $(this);
@@ -25,18 +30,23 @@ $(document).ready(function(){
 	});
 	
 	//This is kinda ugly, but the 'More' links on the section pages have already got the 'small' class
+	//Best way to pretty it is to change the SiteTree and then ajaxify, so this script can auto grab the 'more' content from the subpage
 	//If JS is disabled, the link will be followed as normal. 
+	var h5 = $('.typography h5'),
+		moreText = $('.moreText'),
+		h6 = $('.typography h6');
+	
 	$("a.small").click(function(event){
         event.preventDefault();
-		$('.typography h5').fadeTo('100', 0);
-		$('.moreText').fadeIn(100);		
+		h5.fadeTo('100', 0);
+		moreText.fadeIn(100);		
 	});	
 	
 	$("h6 a").click(function(event){
         event.preventDefault();
-		$('.typography h5').fadeTo('100', 0);
-		$('.typography h6').fadeTo('100', 0);
-		$('.moreText').fadeIn(100);		
+		h5.fadeTo('100', 0);
+		h6.fadeTo('100', 0);
+		moreText.fadeIn(100);		
 	});	
 	
 	$('#content').mouseleave(function(){
