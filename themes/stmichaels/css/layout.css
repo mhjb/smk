@@ -25,7 +25,7 @@ img.left{
 }
 
 .pdflist li{
-	list-style-image: url(../images/pdf_icon.png);	
+	list-style-image: url(../images/pdf_icon_21x21.png);
 	height: 30px;
 }
 
