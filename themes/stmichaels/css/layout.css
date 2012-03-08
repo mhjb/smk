@@ -23,6 +23,13 @@ img.left{
 #LatestSubPage h2{
 	float: left;
 }
+
+.pdflist li{
+	list-style-image: url(../images/pdf_icon.png);	
+	height: 30px;
+}
+
+
 	
 #historyscrollbox {
 	height: 600px;
