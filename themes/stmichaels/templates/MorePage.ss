@@ -16,7 +16,6 @@
 
 <% require javascript(themes/stmichaels/js/stmichaels.js) %>
 
-
 <style type="text/css">
 <!--
 #bibleapDiv {

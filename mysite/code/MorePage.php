@@ -13,7 +13,8 @@ class MorePage extends SiteTree {
 class MorePage_Controller extends ContentController {
 	public function init() {
 		parent::init();
+		
+		PrettyPhoto::set_theme('stmichaels');	
 		PrettyPhoto::include_code();
-
 	}	
 }

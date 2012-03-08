@@ -34,7 +34,14 @@ class Page extends SiteTree {
 		if($s = $this->SectionPage()) return $s->SlideshowImages();
 	}
 	
+	function setPPtheme(){	
+		if($this->title == 'Taonga')
+			$pptheme = "dark_square";
+		else $pptheme = "stmichaels";
+		PrettyPhoto::set_theme($pptheme);	
+	}
 	
+			
 
 }
 class Page_Controller extends ContentController {
@@ -68,7 +75,8 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('form');  */
 		
 		//not sure if this is in the right place but it seems to work:		
+		Page::setPPtheme();
+		//PrettyPhoto::set_theme($pptheme);
 		PrettyPhoto::include_code();
-
 	}
 }

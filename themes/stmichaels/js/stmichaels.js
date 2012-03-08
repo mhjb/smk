@@ -58,6 +58,5 @@ $(document).ready(function(){
 		$('.moreText').fadeOut(100);
 		$('.typography h5').fadeTo('100', 1);
 		$('.typography h6').fadeTo('100', 1);
-	});
-	
+	});		
 });
