@@ -8,6 +8,9 @@
  * http://www.gnu.org/licenses/gpl.html
  * Requires: jQuery v1.3.2 or later
  */
+ 
+ // use something like this to stop the slideshow on popup: if(!stopSlideshow) 
+ 
 ;(function($) {
 
 var ver = 'Lite-1.3';
@@ -17,7 +20,7 @@ $.fn.cycle = function(options) {
         options = options || {};
         
         if (this.cycleTimeout) clearTimeout(this.cycleTimeout);
-        this.cycleTimeout = 0;
+        this.cycleTimeout = 0;        
         this.cyclePause = 0;
         
         var $cont = $(this);
@@ -117,6 +120,7 @@ $.fn.cycle = function(options) {
 
 function go(els, opts, manual, fwd) {
     if (opts.busy) return;
+    
     var p = els[0].parentNode, curr = els[opts.currSlide], next = els[opts.nextSlide];
     if (p.cycleTimeout === 0 && !manual) 
         return;
@@ -137,6 +141,7 @@ function go(els, opts, manual, fwd) {
         var roll = (opts.nextSlide + 1) == els.length;
         opts.nextSlide = roll ? 0 : opts.nextSlide+1;
         opts.currSlide = roll ? els.length-1 : opts.nextSlide-1;
+      
     }
     if (opts.timeout)
         p.cycleTimeout = setTimeout(function() { go(els,opts,0,!opts.rev) }, opts.timeout);
@@ -158,6 +163,7 @@ function advance(els, opts, val) {
     }
     go(els, opts, 1, val>=0);
     return false;
+  
 };
 
 $.fn.cycle.custom = function(curr, next, opts, cb) {

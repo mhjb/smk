@@ -46,36 +46,36 @@
 
 #sign1{
 	position: absolute;
-	top: 70px;
-	left: 90px;
+	top: 82px;
+	left: 98px;
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 10px;
+	height: 12px;
 }
 
 #flag{
 	position: absolute;
-	top: 0;
-	left: 370px;
-	width: 30px;
-	height: 30px;
+	top: 4px;
+	left: 382px;
+	width: 13px;
+	height: 10px;
 }
 
 #sign2{
 	position: absolute;
-	top: 70px;
-	left: 195px;
-	height: 30px;
-	width: 30px;
+	top: 72px;
+	left: 205px;
+	height: 20px;
+	width: 15px;	
 }
 
 
 #sign3{
 	position: absolute;
-	top: 70px;
-	left: 370px;
-	height: 30px;
-	width: 30px;
+	top: 84px;
+	left: 383px;
+	height: 10px;
+	width: 8px;
 }
 	
 #fblink{
