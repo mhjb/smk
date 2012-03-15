@@ -57,22 +57,30 @@
 			<% end_if %>
 			<% end_control %>
 		</div>
-		<% if SectionPage.SlideshowImages %>
-		<div id="photobox">
-			<% if URLSegment = global-mission-group %>
-				<% control SectionPage.GMGSlideshowImages %>
-					<img src="$URL" width="900" height="300" alt="following slideshow" />
-				<% end_control %>			
-
-			<% else %>	
-				<% control SectionPage.SlideshowImages %>
-					<img src="$URL" width="900" height="300" alt="following slideshow" />
-				<% end_control %>			
-			<% end_if %>
-		</div>
-		<div id="fb-link">
-			<a href="http://www.facebook.com/StMichaelsKelburn" title="Visit St Michael's on Facebook"><img src="$Top.ThemeDir/images/icon_facebook.png" /></a>
-		</div>
+		
+    
+          
+    <% if URLSegment = inside-st-mic-sOFF %><!-- work in progress -->
+      <div id="panoBox">
+        <script src="themes/stmichaels/js/swfkrpano.js"></script>
+        <script>embedpano({target:"panoBox",swf:"/$Top.ThemeDir/panorama/index.swf",width:"900px",height:"300px",allowFullScreen:"true"});</script>
+        <object width="900px" height="300px"><embed src="../$Top.ThemeDir/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object>            
+      </div>
+      <% else_if SectionPage.SlideshowImages %>      
+      <div id="photobox">
+        <% if URLSegment = global-mission-group %>
+          <% control SectionPage.GMGSlideshowImages %>
+            <img src="$URL" width="900" height="300" alt="following slideshow" />
+          <% end_control %>        
+        <% else %>	
+          <% control SectionPage.SlideshowImages %>
+            <img src="$URL" width="900" height="300" alt="following slideshow" />
+          <% end_control %>			
+        <% end_if %>
+      </div>
+      <div id="fb-link">
+        <a href="http://www.facebook.com/StMichaelsKelburn" title="Visit St Michael's on Facebook"><img src="$Top.ThemeDir/images/icon_facebook.png" /></a>
+      </div>
 		<% end_if %>
 		
 		$Layout

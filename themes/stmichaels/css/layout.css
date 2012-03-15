@@ -24,8 +24,24 @@ img.left{
 	float: left;
 }
 
-.pdflist li{
-	list-style-image: url(../images/pdf_icon_21x21.png);
+.fileList, .fileList ul{
+  list-style: none;
+}
+
+.fileList ul{
+  margin-left: 0;  
+  padding-left: 0;  
+}
+
+.fileList ul{
+  margin-bottom: 10px;
+}
+
+
+.pdfLink a{
+  display: block;
+	background: url(../images/pdf_icon_21x21.png) no-repeat;
+  padding-left: 30px;
 	height: 30px;
 }
 
