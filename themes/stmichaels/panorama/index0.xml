@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!--for xml compliance-->
+<krpano version="1.0.8.14">
+    <!-- actions to perform while loading -->
+    <events onxmlcomplete="if(autorotate.enabled==false,set(plugin[autorotationOFF].visible,false); set(plugin[autorotationON].visible,true);,set(plugin[autorotationOFF].visible,true); set(plugin[autorotationON].visible,false););"/>
+    <!--************** Panorama *******************************************************************-->
+    <!--@File="index0.xml" @PanoName="stage4c" @FilePath="E:/Photos and Images/2010/2010-12-10--14Photography - Wellington Dec 2010/Monday/Pano1/panorama2/PhotomatixResults01/stage4c.tif"-->
+    <panoview h="-4.34" v="3.14" fov="67.62"/>
+    <!-- view parameters -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" fovmin="56.25" fovmax="100" fov="67.62" hlookat="-4.34" vlookat="3.14"/>
+    <autorotate horizon="3.14" tofov="67.62"/>
+    <!-- preview image -->
+    <preview url="indexdata/index0/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>
+    <!-- the pano itself -->
+    <image type="CUBE" multires="true" tilesize="375" baseindex="0">
+        <level tiledimagewidth="1500" tiledimageheight="1500">
+            <left url="indexdata/index0/3/2/%v_%u.jpg"/>
+            <front url="indexdata/index0/0/2/%v_%u.jpg"/>
+            <right url="indexdata/index0/1/2/%v_%u.jpg"/>
+            <back url="indexdata/index0/2/2/%v_%u.jpg"/>
+            <up url="indexdata/index0/4/2/%v_%u.jpg"/>
+            <down url="indexdata/index0/5/2/%v_%u.jpg"/>
+        </level>
+        <level tiledimagewidth="750" tiledimageheight="750">
+            <left url="indexdata/index0/3/1/%v_%u.jpg"/>
+            <front url="indexdata/index0/0/1/%v_%u.jpg"/>
+            <right url="indexdata/index0/1/1/%v_%u.jpg"/>
+            <back url="indexdata/index0/2/1/%v_%u.jpg"/>
+            <up url="indexdata/index0/4/1/%v_%u.jpg"/>
+            <down url="indexdata/index0/5/1/%v_%u.jpg"/>
+        </level>
+        <level tiledimagewidth="375" tiledimageheight="375">
+            <left url="indexdata/index0/3/0/%v_%u.jpg"/>
+            <front url="indexdata/index0/0/0/%v_%u.jpg"/>
+            <right url="indexdata/index0/1/0/%v_%u.jpg"/>
+            <back url="indexdata/index0/2/0/%v_%u.jpg"/>
+            <up url="indexdata/index0/4/0/%v_%u.jpg"/>
+            <down url="indexdata/index0/5/0/%v_%u.jpg"/>
+        </level>
+        <!--mobile phone / iphone images-->
+        <mobile>
+            <left url="indexdata/index0/3/mobile_face.jpg"/>
+            <front url="indexdata/index0/0/mobile_face.jpg"/>
+            <right url="indexdata/index0/1/mobile_face.jpg"/>
+            <back url="indexdata/index0/2/mobile_face.jpg"/>
+            <up url="indexdata/index0/4/mobile_face.jpg"/>
+            <down url="indexdata/index0/5/mobile_face.jpg"/>
+        </mobile>
+        <!--tablet pc / ipad images-->
+        <tablet>
+            <left url="indexdata/index0/3/tablet_face.jpg"/>
+            <front url="indexdata/index0/0/tablet_face.jpg"/>
+            <right url="indexdata/index0/1/tablet_face.jpg"/>
+            <back url="indexdata/index0/2/tablet_face.jpg"/>
+            <up url="indexdata/index0/4/tablet_face.jpg"/>
+            <down url="indexdata/index0/5/tablet_face.jpg"/>
+        </tablet>
+    </image>
+    <!--************** Hotspots and lensflares ***************************************************-->
+    <!-- close all hotspots -->
+</krpano>

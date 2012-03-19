@@ -60,12 +60,14 @@
 		
     
           
-    <% if URLSegment = inside-st-mic-sOFF %><!-- work in progress -->
-      <div id="panoBox">
-        <script src="themes/stmichaels/js/swfkrpano.js"></script>
-        <script>embedpano({target:"panoBox",swf:"/$Top.ThemeDir/panorama/index.swf",width:"900px",height:"300px",allowFullScreen:"true"});</script>
-        <object width="900px" height="300px"><embed src="../$Top.ThemeDir/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object>            
+    <% if URLSegment = inside-st-mic-s-OFF %><!-- work in progress: having trouble with paths -->
+    <% require javascript(themes/stmichaels/panorama/swfobject/swfkrpano.js) %>
+    
+      <div id="panoBox">       
+        <script>embedpano({target:"panoBox",swf:"$Basehref themes/stmichaels/panorama/index.swf",width:"900px",height:"300px",allowFullScreen:"true"});</script>
+        <object width="900px" height="300px"><embed src="$Basehref themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object>            
       </div>
+      
     <% else_if SectionPage.SlideshowImages %>      
       <div id="photobox">
         <% if URLSegment = global-mission-group %>
