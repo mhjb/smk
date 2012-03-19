@@ -32,7 +32,7 @@ class SectionPage extends RedirectorPage {
 	}
 	
 	function SlideshowImages() {
-		$folder = File::find('section-photos/' . $this->URLSegment);
+		$folder = File::find('section-photos/' . $this->URLSegment);    
 		if($folder) {
 			return DataObject::get("Image","\"ParentID\" = $folder->ID");
 		}

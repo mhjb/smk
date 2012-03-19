@@ -66,7 +66,7 @@
         <script>embedpano({target:"panoBox",swf:"/$Top.ThemeDir/panorama/index.swf",width:"900px",height:"300px",allowFullScreen:"true"});</script>
         <object width="900px" height="300px"><embed src="../$Top.ThemeDir/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object>            
       </div>
-      <% else_if SectionPage.SlideshowImages %>      
+    <% else_if SectionPage.SlideshowImages %>      
       <div id="photobox">
         <% if URLSegment = global-mission-group %>
           <% control SectionPage.GMGSlideshowImages %>
@@ -74,7 +74,11 @@
           <% end_control %>        
         <% else %>	
           <% control SectionPage.SlideshowImages %>
-            <img src="$URL" width="900" height="300" alt="following slideshow" />
+            <% if First %>
+              <img src="$URL" width="900" height="300" alt="following slideshow" />
+            <% else %>
+              <img src="$URL" width="900" height="300" alt="following slideshow" style="opacity: 0" />
+            <% end_if %>            
           <% end_control %>			
         <% end_if %>
       </div>

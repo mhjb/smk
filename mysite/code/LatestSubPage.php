@@ -28,7 +28,7 @@ class LatestSubPage extends SiteTree {
 		  $sort = "Created DESC", 
 		  $join = "", 
 		  $limit = "" 
-	  );
+	  );    
     
     $filesArr = $files->toArray();
     
