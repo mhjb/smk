@@ -60,12 +60,12 @@
 		
     
           
-    <% if URLSegment = inside-st-mic-s-OFF %><!-- work in progress: having trouble with paths -->
-    <% require javascript(themes/stmichaels/panorama/swfobject/swfkrpano.js) %>
+    <% if URLSegment = inside-st-mic-s %>
+      <% require javascript(themes/stmichaels/js/swfkrpano.js) %>
     
-      <div id="panoBox">       
-        <script>embedpano({target:"panoBox",swf:"$Basehref themes/stmichaels/panorama/index.swf",width:"900px",height:"300px",allowFullScreen:"true"});</script>
-        <object width="900px" height="300px"><embed src="$Basehref themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object>            
+      <div id="photobox">       
+        <script>embedpano({target:"photobox",xml:"themes/stmichaels/panorama/index.xml", swf:"themes/stmichaels/panorama/index.swf", width:"900px",height:"300px",allowFullScreen:"true"});</script>
+        <noscript><object width="900px" height="300px"><embed src="themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object></noscript>
       </div>
       
     <% else_if SectionPage.SlideshowImages %>      
@@ -98,15 +98,6 @@
 		<% if SectionTitle = Connecting %>
 			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
-		
-		<!--
-		<% if SectionTitle = Latest %>
-			<div id="snailSign">
-				<a href="#" title="Roster" id="snailRosterLink">&nbsp;</a>
-				<a href="$Top.ThemeDir/images/ssign.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/ssign.png')" rel="prettyPhoto" id="snailSignLink">&nbsp;</a>
-			</div>
-		<% end_if %>
-		-->
 		
 		</div>
   </div>
