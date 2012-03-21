@@ -24,6 +24,7 @@ class SectionPage extends RedirectorPage {
 		}
 	}
 	
+  /*
 	function GMGSlideshowImages() {
 		$folder = File::find('section-photos/engaging/global-mission-group');
 		if($folder) {		
@@ -37,6 +38,8 @@ class SectionPage extends RedirectorPage {
 			return DataObject::get("Image","\"ParentID\" = $folder->ID");
 		}
 	}
+  
+  */
 
 }
 

@@ -33,7 +33,28 @@ class Page extends SiteTree {
 		
 		if($s = $this->SectionPage()) return $s->SlideshowImages();
 	}
+
+	function Slideshow() {
+    $path = "/stmichaels/assets/section-photos/";
+    $first = true;
+    $html = "<div id='photobox'>";
+    $files = array();
+    include 'slideshow-list.inc.php';
+    foreach($files as $file){
+      if ($first){
+        $html .= "<img src='" . $path . $file . "' width='900' height='300' alt='slideshow' />";    
+        $first = false;
+      }
+      else $html .= "<img src='" . $path . $file . "' width='900' height='300' alt='slideshow' style='opacity: 0' />";    
+    }
+    $html .= "</div>";
+    return $html;        
+        
+        
+	}
 	
+    
+  
 	function setPPtheme(){	
 		if($this->title == 'Taonga')
 			$pptheme = "dark_square";

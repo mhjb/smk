@@ -68,27 +68,13 @@
         <noscript><object width="900px" height="300px"><embed src="themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object></noscript>
       </div>
       
-    <% else_if SectionPage.SlideshowImages %>      
-      <div id="photobox">
-        <% if URLSegment = global-mission-group %>
-          <% control SectionPage.GMGSlideshowImages %>
-            <img src="$URL" width="900" height="300" alt="following slideshow" />
-          <% end_control %>        
-        <% else %>	
-          <% control SectionPage.SlideshowImages %>
-            <% if First %>
-              <img src="$URL" width="900" height="300" alt="following slideshow" />
-            <% else %>
-              <img src="$URL" width="900" height="300" alt="following slideshow" style="opacity: 0" />
-            <% end_if %>            
-          <% end_control %>			
-        <% end_if %>
-      </div>
+    <% else_if Slideshow %>      
+      $Slideshow
       <div id="fb-link">
         <a href="http://www.facebook.com/StMichaelsKelburn" title="Visit St Michael's on Facebook"><img src="$Top.ThemeDir/images/icon_facebook.png" /></a>
-      </div>
-		<% end_if %>
-		
+      </div>    
+    <% end_if %>
+    
 		$Layout
 		
 		<% if SectionTitle = Following %>
