@@ -60,7 +60,7 @@
 		
     
           
-    <% if URLSegment = inside-st-mic-s %>
+    <% if URLSegment = inside-st-mic-s-OFF %> <!--needs work -->
       <% require javascript(themes/stmichaels/js/swfkrpano.js) %>
     
       <div id="photobox">       

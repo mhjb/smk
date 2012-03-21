@@ -24,7 +24,7 @@ class SectionPage extends RedirectorPage {
 		}
 	}
 	
-  /*
+  /*  
 	function GMGSlideshowImages() {
 		$folder = File::find('section-photos/engaging/global-mission-group');
 		if($folder) {		
