@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!--for xml compliance-->
+<krpano version="1.0.8.14" logkey="false">
+    <!--************** KrPano plugins and datas ***************************************************-->
+    <plugin name="data" keep="true"/>
+    <!--************** Open the first pano ********************************************************-->
+    <include url="index0.xml"/>
+    <autorotate enabled="true" waittime="1" speed="5"/>
+    <!--************** Fonts **********************************************************************-->
+    <textstyle name="DEFAULT" bold="false" font="Arial" fontsize="16" italic="false" textcolor="0xff000000"/>
+    <!--************** Menu ***********************************************************************-->
+    <plugin name="in" align="bottom" crop="0|0|65|65" height="prop" keep="true" ondown="set(fov_moveforce,-1);" onout="" onover="" onovercrop="0|65|65|65" onup="set(fov_moveforce,0);" url="indexdata/graphics/menu/menu0.png" width="40" x="-160" y="10"/>
+    <plugin name="out" align="bottom" crop="0|0|65|65" height="prop" keep="true" ondown="set(fov_moveforce,+1);" onout="" onover="" onovercrop="0|65|65|65" onup="set(fov_moveforce,0);" url="indexdata/graphics/menu/menu1.png" width="40" x="-120" y="10"/>
+    <plugin name="left" align="bottom" crop="0|0|65|65" height="prop" keep="true" ondown="set(hlookat_moveforce,-1);" onout="" onover="" onovercrop="0|65|65|65" onup="set(hlookat_moveforce,0);" url="indexdata/graphics/menu/menu2.png" width="40" x="-80" y="10"/>
+    <plugin name="right" align="bottom" crop="0|0|65|65" height="prop" keep="true" ondown="set(hlookat_moveforce,+1);" onout="" onover="" onovercrop="0|65|65|65" onup="set(hlookat_moveforce,0);" url="indexdata/graphics/menu/menu3.png" width="40" x="-40" y="10"/>
+    <plugin name="up" align="bottom" crop="0|0|65|65" height="prop" keep="true" ondown="set(vlookat_moveforce,-1);" onout="" onover="" onovercrop="0|65|65|65" onup="set(vlookat_moveforce,0);" url="indexdata/graphics/menu/menu4.png" width="40" x="0" y="10"/>
+    <plugin name="down" align="bottom" crop="0|0|65|65" height="prop" keep="true" ondown="set(vlookat_moveforce,+1);" onout="" onover="" onovercrop="0|65|65|65" onup="set(vlookat_moveforce,0);" url="indexdata/graphics/menu/menu5.png" width="40" x="40" y="10"/>
+    <plugin name="home" align="bottom" crop="0|0|65|65" height="prop" keep="true" onclick="lookto(get(panoview.h),get(panoview.v),get(panoview.fov),smooth(100,20,50));" onout="" onover="" onovercrop="0|65|65|65" url="indexdata/graphics/menu/menu6.png" width="40" x="80" y="10"/>
+    <plugin name="autorotationON" align="bottom" blendmode="normal" crop="0|0|65|65" customColor="true" height="prop" keep="true" onclick="switch(autorotate.enabled);set(plugin[autorotationON].visible,false); set(plugin[autorotationOFF].visible,true);" onout="" onover="" onovercrop="0|65|65|65" url="indexdata/graphics/menu/menu7.png" visible="" width="40" x="120" y="10"/>
+    <plugin name="autorotationOFF" align="bottom" blendmode="normal" crop="0|0|65|65" customColor="true" height="prop" keep="true" onclick="switch(autorotate.enabled);set(plugin[autorotationOFF].visible,false); set(plugin[autorotationON].visible,true);" onovercrop="0|65|65|65" url="indexdata/graphics/menu/menu8.png" visible="" width="40" x="120" y="10"/>
+    <plugin name="info" align="bottom" crop="0|0|65|65" customColor="true" height="prop" keep="true" onclick="displayHelp();" onout="" onover="" onovercrop="0|65|65|65" url="indexdata/graphics/menu/menu9.png" width="40" x="160" y="10"/>
+    <plugin name="helpScreen" align="center" customColor="true" keep="true" onclick="closeHelp();" url="indexdata/graphics/menu/help.png" visible="false"/>
+    <action name="displayHelp">
+        set(plugin[helpScreen].visible,true);
+        set(plugin[info].onclick,closeHelp();)
+    </action>
+    <action name="closeHelp">
+        set(plugin[helpScreen].visible,false);
+        set(plugin[info].onclick,displayHelp();)
+    </action>
+    <action name="closeglobalobjects"/>
+    <action name="interruptAnimation">
+        <!--Raise sequence stopper and wait sequence time to break the delayed calls-->
+	ifnot (stopSequence === undefined,
+		set(stopSequence,true);
+		wait(0);
+	);
+</action>
+</krpano>
