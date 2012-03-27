@@ -34,7 +34,7 @@
 	color: #aeb8d1;
 	padding-top: 0px;
 	margin-top: 5px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	
 }
 .typography p {
@@ -57,10 +57,17 @@
 	margin-top: 2px;
 	padding-top: 0px;
 }
+
 .typography h3 {
-	font: bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;
+	margin-bottom: .5em; 
 }
+
+.typography h3.first {
+	margin-top: 0; 
+}
+
 .typography .morelink {
 	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
