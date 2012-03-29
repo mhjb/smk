@@ -17,8 +17,5 @@ SSViewer::set_theme('stmichaels');
 // enable nested URLs for this site (e.g. page/sub-page/)
 SiteTree::enable_nested_urls();
 
-//PrettyPhoto::set_theme("stmichaels");
-
-//PrettyPhoto::set_theme("dark_square");
 PrettyPhoto::set_more_config("allowresize: false, opacity: 0.4");
 PrettyPhoto::set_more_config("AnimationSpeed: 'fast'");
