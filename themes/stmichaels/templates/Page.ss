@@ -60,12 +60,11 @@
 		
     
           
-    <% if URLSegment = inside-st-mic-s %> <!--needs work: the paths are all messed up so it won't work in production but lord knows what it is supposed to look like -->
+    <% if URLSegment = inside-st-mic-s %>
       <% require javascript(themes/stmichaels/js/swfkrpano.js) %>
-    
       <div id="photobox">       
-        <script>embedpano({target:"photobox",xml:"/stmichaels/themes/stmichaels/panorama/index.xml", swf:"/stmichaels/themes/stmichaels/panorama/index.swf", width:"900px",height:"300px",allowFullScreen:"true"});</script>
-        <noscript><object width="900px" height="300px"><embed src="/stmichaels/themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object></noscript>
+        <script>embedpano({target:"photobox",xml:"themes/stmichaels/panorama/index.xml", swf:"themes/stmichaels/panorama/index.swf", width:"900px",height:"300px",allowFullScreen:"true"});</script>
+        <noscript><object width="900px" height="300px"><embed src="themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object></noscript>
       </div>
       
     <% else_if Slideshow %>      

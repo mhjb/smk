@@ -14,7 +14,7 @@ class MorePage_Controller extends ContentController {
 	public function init() {
 		parent::init();
 		
-		PrettyPhoto::set_theme('stmichaels');	
+		PrettyPhoto::set_theme('dark_square');	
 		PrettyPhoto::include_code();
 	}	
 }

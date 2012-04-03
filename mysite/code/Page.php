@@ -63,6 +63,13 @@ class Page extends SiteTree {
 	}
 	
 			
+protected function onBeforeWrite() { // see here for explanation http://www.electrictoolbox.com/silverstripe-prefix-img-src-assets-leading-slash/
+    parent::onBeforeWrite();
+    $this->Content = str_replace(' src="assets/', ' src="/assets/', $this->Content);
+}
+      
+      
+      
 
 }
 class Page_Controller extends ContentController {

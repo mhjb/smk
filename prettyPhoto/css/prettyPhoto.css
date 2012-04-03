@@ -167,7 +167,7 @@ a.pp_close{display:block;float: right;text-indent: -10000px;}
 #pp_full_res{line-height:1 !important;}
 #pp_full_res .pp_inline{text-align: left;}
 #pp_full_res .pp_inline p{margin:0 0 15px 0;}
-div.ppt{color:#fff;display: none;font-size:17px;left:0;position:absolute;top:0;z-index:9999;}
+div.ppt{color:#fff;display: none;font:17px arial, sans-serif;left:0;position:absolute;top:0;z-index:9999;}
 .clearfix:after{content: ".";display:block;height:0;clear:both;visibility: hidden;}
 .clearfix {display: inline-block;}
 * html .clearfix {height:1%;}
