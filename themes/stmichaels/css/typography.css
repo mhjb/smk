@@ -34,7 +34,7 @@
 	color: #aeb8d1;
 	padding-top: 0px;
 	margin-top: 5px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	
 }
 .typography p {
@@ -57,17 +57,24 @@
 	margin-top: 2px;
 	padding-top: 0px;
 }
+
 .typography h3 {
-	font: bold 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;
+	margin-bottom: .5em; 
 }
+
+.typography h3.first {
+	margin-top: 0; 
+}
+
 .typography .morelink {
 	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 .typography .moreText{
 
-	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #A4998C;
 	width: 900px;
 	letter-spacing: 0px;
@@ -76,6 +83,7 @@
 	z-index: 10000;
 	background: white;
 	padding-bottom: 10px;
+	line-height:130%;
 	}
 
 .typography h4 {
@@ -117,7 +125,7 @@
 	font: normal 28px/28px "FrizQuaNo2D", "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #A4998C;
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	letter-spacing: 0px;
 }
 	.typography h5 .small {
@@ -134,6 +142,6 @@
 	font: normal 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #A4998C;
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 

@@ -83,7 +83,14 @@
 		<% if SectionTitle = Connecting %>
 			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
+
+		<% if SectionTitle = Honouring %>
+			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
+		<% end_if %>
 		
+		<% if SectionTitle = Engaging %>
+			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
+		<% end_if %>		
 		</div>
   </div>
 

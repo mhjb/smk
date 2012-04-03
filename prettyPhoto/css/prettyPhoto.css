@@ -1,5 +1,4 @@
 
-
 div.stmichaels .pp_top .pp_left{}
 div.stmichaels .pp_top .pp_middle{}
 div.stmichaels .pp_top .pp_right{}
@@ -133,7 +132,7 @@ div.facebook .pp_bottom .pp_left{background: url(../images/prettyPhoto/facebook/
 div.facebook .pp_bottom .pp_middle{background: url(../images/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x;}
 div.facebook .pp_bottom .pp_right{background: url(../images/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat;}
 div.pp_pic_holder a:focus{outline:none;}
-div.pp_overlay{background:#000;display: none;left:0;position:absolute;top:0;width:100%;z-index:9500;}
+div.pp_overlay{background:#D1D1D1;display: none;left:0;position:absolute;top:0;width:100%;z-index:9500;}
 div.pp_pic_holder{display: none;position:absolute;width:100px;z-index:10000;}
 .pp_top{height:20px;position: relative;}
 * html .pp_top{padding:0 20px;}
