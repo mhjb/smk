@@ -9,12 +9,15 @@
 <% require themedCSS(jquery.jscrollpane.lozenge) %>
 <% require themedCSS(typography) %>
 <% require themedCSS(followinglayout) %>
+<% require themedCSS(sitemap-default) %>
+
 <% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
 <% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
 <% require javascript(themes/stmichaels/js/jquery.jscrollpane.min.js) %>
 <% require javascript(themes/stmichaels/js/jquery.cycle.lite.js) %>
 
 <% require javascript(themes/stmichaels/js/stmichaels.js) %>
+<% require javascript(themes/stmichaels/js/sitemap-default.js) %>
 
 <style type="text/css">
 <!--

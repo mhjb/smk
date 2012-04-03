@@ -1,0 +1,15 @@
+SiteMapModule ChangeLog
+
+0.1
+  - Initial release
+
+0.1.1
+  - Update for Silverstripe 2.4 Release specifically fixing the URLs of nested pages.
+
+0.1.5
+  - Change the way the site map gets children to allow displaying data objects.
+	Now uses $this->Children to get child pages rather than querying the SiteTree table directly.
+	This allows Children() function to be overwritten on a page class to return other pages or data objects to be displayed on the site tree.
+  - Pages to be skipped are now included as an array rather than a string with sql syntax.
+  - Optimised images
+  - Cleaned up code, documentation, license and added more comments

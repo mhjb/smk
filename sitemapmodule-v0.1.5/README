@@ -1,0 +1,100 @@
+/**
+
+Copyright (c) 2010, Design City Pty Ltd - http://designcity.com.au
+Written by Michael Bollig
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of Design City nor the names of its contributors may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGE.
+
+**/
+
+###############################################
+Site Map Module 0.1.5
+###############################################
+
+Maintainer Contact
+-----------------------------------------------
+Design City Pty Ltd - http://designcity.com.au
+Michael Bollig (Nickname: designcity) <ss (at) designcity (dot) com (dot) au>
+
+Requirements
+-----------------------------------------------
+SilverStripe 2.3+, 2.4+. If it runs on 2.2.3 please get in touch.
+
+Documentation
+-----------------------------------------------
+Below, the _config.php and SiteMapModule.php code. 
+
+If you have any issues, chase me up on the silverstripe IRC channel (http://doc.silverstripe.org/doku.php?id=irc)
+
+Installation Instructions
+-----------------------------------------------
+1. 	Place this directory in the root of your SilverStripe installation
+	i.e. you will now have the following root folders
+
+	assets
+	mysite
+	cms
+	sapphire
+	sitemapmodule
+
+2. 	Visit http://www.yoursite.com/dev/build in your browser (where yoursite.com refers to the URL of your SilverStripe site)
+
+3. Change Page Title, Page URL, Hidden Classes, Permissions Check and Theme as below.
+
+Usage Overview
+-----------------------------------------------
+
+PLEASE NOTE: Nothing is added to the CMS - your site map will appear when you visit http://www.yoursite.com/site-map/ (This URL can be changed as detailed below).
+
+The following configuration options are available:
+
+SITE MAP PAGE TITLE
+	Add the following line to your _config.php to override the default Title for the site map page. Uses 'Site Map' by default.
+	
+	SiteMapModule::setTitle('Site Map');
+	
+SITE MAP URL
+	Add the following line to your _config.php to override the default URL Segment for the site map. Uses 'site-map' by default.
+	
+	SiteMapModule::setURLSegment('site-map');
+	
+HIDE PAGE TYPES FROM THE SITE MAP
+	Add the following line to your _config.php to override the default page types that are skipped when rendering the site map.
+	Page classes *must* be passed as an array, even when only skipping a single class.
+	
+	SiteMapModule::skipPageTypes(array(
+		"ErrorPage",
+		"OtherPage",
+		"OtherPage"
+	));
+
+CHECK USER PERMISSIONS AND HIDE PAGES THE USER CAN'T VIEW
+	Add the following line to your _config.php to do a permissions check to ensure only pages the user is allowed to view are shown.
+	Can either be true (will check permissions) or false (will not check permissions).
+
+	SiteMapModule::setPermissionCheck(true);
+	
+SITE MAP THEME
+	Add the following line to your _config.php to switch the theme from the default minimal theme to slickmap:
+	Either set the theme name to 'default' or remove the SiteMapModule::setTheme line from your _config.php to switch back to the default theme.
+
+	SiteMapModule::setTheme('slickmap');
+
+To do
+-----------------------------------------------
+
+* Add Translatable support
