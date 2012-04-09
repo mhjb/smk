@@ -19,3 +19,5 @@ SiteTree::enable_nested_urls();
 
 PrettyPhoto::set_more_config("allowresize: false, opacity: 0.4");
 PrettyPhoto::set_more_config("AnimationSpeed: 'fast'");
+
+ZendSearchLuceneSearchable::enable();
