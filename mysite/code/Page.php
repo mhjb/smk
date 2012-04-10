@@ -35,7 +35,7 @@ class Page extends SiteTree {
 	}
 
 	function Slideshow() {
-    $path = "/stmichaels/assets/section-photos/";
+    $path = "assets/section-photos/";
     $first = true;
     $html = "<div id='photobox'>";
     $files = array();
