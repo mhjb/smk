@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function(){
 	
 	$('#followscrollbox').jScrollPane({
@@ -13,6 +10,10 @@ $(document).ready(function(){
 		verticalDragMaxHeight: 40,
 	});
 
+  
+			
+		
+  
 	$('#photobox').cycle({
 		fx: 	'fade',
 		speed: 3800

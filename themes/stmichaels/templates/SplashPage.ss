@@ -53,6 +53,9 @@ body {
 -->
 </style>
 <% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
+<% require javascript(themes/stmichaels/js/preload.js) %>
+    
+		
 </head>
 
 <body>

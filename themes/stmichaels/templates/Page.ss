@@ -13,6 +13,7 @@
 <% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
 <% require javascript(themes/stmichaels/js/jquery.jscrollpane.min.js) %>
 <% require javascript(themes/stmichaels/js/jquery.cycle.lite.js) %>
+<% require javascript(themes/stmichaels/js/preload.js) %>
 <% if URLSegment != Security %>
   <% require javascript(themes/stmichaels/js/stmichaels.js) %>
 <% end_if %>
@@ -76,10 +77,13 @@
     <% end_if %>
     
 		$Layout
+    
+	
 		
-		<% if SectionTitle = Following %>
+    <% if SectionTitle = Following %>
 			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkfollowing.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkfollowing.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
+
 		
 		<% if SectionTitle = Connecting %>
 			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
