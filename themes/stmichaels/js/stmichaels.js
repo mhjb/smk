@@ -5,7 +5,7 @@ $(document).ready(function(){
 		verticalDragMaxHeight: 40,
 	});
 	
-	$('#historyscrollbox').jScrollPane({
+	$('#more-page-scrollbox').jScrollPane({
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
 	});

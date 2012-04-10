@@ -24,7 +24,7 @@ class LatestSubPage extends SiteTree {
     $files = DataObject::get( 
 		  $name = 'File', 
 		  $filter = "ClassName = 'file' and Filename like 'assets/pdfs/$this->URLSegment/%'", 
-		  $sort = "Created DESC", 
+		  $sort = "Filename ASC", 
 		  $join = "", 
 		  $limit = "" 
 	  );    
@@ -39,7 +39,7 @@ class LatestSubPage extends SiteTree {
         $html .= "<ul>";
         foreach ($filesArr as $file){        
           if(strstr($file->Filename, $folder->Name)) 
-            $html .= "<li class='pdfLink'><a href='" . $file->Filename . "'>" . substr($file->Name, 0, -4) . "</a></li>";        
+            $html .= "<li class='pdfLink'><a href=\"" . $file->Filename . "\">" . substr($file->Name, 0, -4) . "</a></li>";        
           
         }      
         $html .= "</ul>";

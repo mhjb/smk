@@ -62,11 +62,10 @@ class Page extends SiteTree {
 		PrettyPhoto::set_theme($pptheme);	
 	}
 	
-			
-  protected function onBeforeWrite() { // see here for explanation http://www.electrictoolbox.com/silverstripe-prefix-img-src-assets-leading-slash/
-    parent::onBeforeWrite();
-    $this->Content = str_replace(' src="assets/', ' src="/assets/', $this->Content);
-  }
+	
+  // removed "protected function onBeforeWrite() { 	... }"
+  // see here for explanation http://www.electrictoolbox.com/silverstripe-prefix-img-src-assets-leading-slash/
+
    
 }
 

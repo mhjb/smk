@@ -18,30 +18,35 @@ img.left{	margin: 0 10px 10px 0;	}
 	float: left;
 }
 
-.fileList, .fileList ul{
+.fileList, .fileList ul {
   list-style: none;
 }
 
-.fileList ul{
-  margin-left: 0;  
-  padding-left: 0;  
+.fileList li {
+	clear: both;  }
+
+.fileList ul {
+  margin: 0;
+  position: relative; 
 }
 
-.fileList ul{
-  margin-bottom: 10px;
-}
+.fileList ul li {
+	width: 33%; 
+	float: left;
+	clear: none;}
 
 
 .pdfLink a{
   display: block;
 	background: url(../images/pdf_icon_21x21.png) no-repeat;
   padding-left: 30px;
-	height: 30px;
+	min-height: 30px;
+	padding-bottom: 10px; 
 }
 
 
 	
-#historyscrollbox {
+#more-page-scrollbox {
 	height: 600px;
 	width: 900px;
 	overflow:auto;

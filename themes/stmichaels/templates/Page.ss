@@ -77,24 +77,21 @@
     <% end_if %>
     
 		$Layout
-    
-	
-		
-    <% if SectionTitle = Following %>
+    	
+    	<% if SectionTitle = Following %>
 			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkfollowing.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkfollowing.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
 
-		
 		<% if SectionTitle = Connecting %>
 			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
 
 		<% if SectionTitle = Honouring %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
+			<div id="snail"><a href="$Top.ThemeDir/images/snail_praisebreath.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snail_praisebreath.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>
 		
 		<% if SectionTitle = Engaging %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
+			<div id="snail"><a href="$Top.ThemeDir/images/snail_theearth.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snail_theearth.png')" rel="prettyPhoto"></a></div>
 		<% end_if %>		
 		</div>
   </div>
@@ -102,7 +99,7 @@
 </div>
 <div id="footer" class="typography">
   <div class="footertext" id="footerleft"> &copy; $Now.Year St Michael&rsquo;s Anglican Church, Kelburn, Wellington, New Zealand.<br />
-  Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>. Implemented by <a href="http://bartlettprojects.com">Bartlett Projects</a> </div>
+  Designed by <a class="nolink" href="http://www.lilyemo.co.nz">Lily Emo</a>. Implemented by <a class="nolink" href="http://bartlettprojects.com">Bartlett Projects</a>.</div>
 
   <div class="footertext" id="footersegments"><a class="nolink" href="site-map" >Site Map</a></div>
   <div id="footerright">
