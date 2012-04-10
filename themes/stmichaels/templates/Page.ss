@@ -98,15 +98,17 @@
 </div>
 <div id="footer" class="typography">
   <div class="footertext" id="footerleft"> &copy; $Now.Year St Michael&rsquo;s Anglican Church, Kelburn, Wellington, New Zealand.<br />
-Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>. </div>
-<!--  <div class="footertext" id="footersegments"><a class="nolink" href="sitemap.html" >Site Map</a></div>
+  Designed by <a class="nolink" href="http://www.lily.emo.co.nz">Lily Emo</a>. Implemented by <a href="http://bartlettprojects.com">Bartlett Projects</a> </div>
+
+  <div class="footertext" id="footersegments"><a class="nolink" href="site-map" >Site Map</a></div>
   <div id="footerright">
-    <div id="searchwrapper">
-      <form action="">
-        <input type="text" class="searchbox" name="s" value="" />
-        <input type="image" src="$ThemeDir/images/blank.png" class="searchbox_submit" value="" />
+    <div id="searchwrapper">      
+      <form id="SearchForm_SearchForm" action="/stmichaels/main/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+        <input type="text" class="searchbox" id="SearchForm_SearchForm_Search" name="Search" value="">
+        <input type="image" src="$ThemeDir/images/blank.png" class="searchbox_submit"  id="SearchForm_SearchForm_action_results" name="action_results" value="Go" title="Go">      
       </form>
     </div>
-  </div> -->
-</div></body>
+  </div> 
+</div>
+</body>
 </html>
