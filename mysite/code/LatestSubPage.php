@@ -45,13 +45,16 @@ class LatestSubPage extends SiteTree {
         $html .= "</ul>";
       }
       if($folder->Name == $this->URLSegment){ //that is, if in root directory
-        $html .= "<li>Other</li><ul>";
+        
+        $count_other_files = 0; 
         foreach ($filesArr as $file){    
-          if(substr_count($file->Filename, '/') < $maxdepth)
+          if(substr_count($file->Filename, '/') < $maxdepth){
+            $count_other_files++;
+            if($count_other_files == 1) $html .= "<li>Other</li><ul>";
             $html .= "<li class='pdfLink'><a href='" . $file->Filename . "'>" . substr($file->Name, 0, -4) . "</a></li>";
-          
+          }
         }
-        $html .= "</html>";
+        if($count_other_files) $html .= '</ul>';
       }
     }    
     
