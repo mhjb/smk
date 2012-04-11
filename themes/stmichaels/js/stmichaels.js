@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	 
-  $("a[rel^='prettyPhoto']").prettyPhoto();
   
 	$('#followscrollbox').jScrollPane({
 		verticalDragMinHeight: 40,

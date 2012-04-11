@@ -16,6 +16,11 @@
 
 <% require javascript(themes/stmichaels/js/stmichaels.js) %>
 
+<% require themedCSS(prettyPhoto) %>
+<% require javascript(themes/stmichaels/js/jquery.prettyPhoto.js) %>
+<% require javascript(themes/stmichaels/js/PPtheme1.js) %>
+
+
 
 <style type="text/css">
 <!--

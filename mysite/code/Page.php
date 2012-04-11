@@ -53,7 +53,7 @@ class Page extends SiteTree {
         
 	}
 	
-    
+
   
 	/*function setPPtheme(){	
 		if($this->title == 'Taonga')
@@ -95,6 +95,8 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
+    
+    
 
 		// Note: you should use SS template require tags inside your templates 
 		// instead of putting Requirements calls here.  However these are 
@@ -119,4 +121,8 @@ class Page_Controller extends ContentController {
  
     return $this->customise($data)->renderWith(array('Page_results', 'Page'));
   }
+  
+  
+
+  
 }

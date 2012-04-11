@@ -19,6 +19,11 @@
 <% require javascript(themes/stmichaels/js/stmichaels.js) %>
 <% require javascript(themes/stmichaels/js/sitemap-default.js) %>
 
+<% require themedCSS(prettyPhoto) %>
+<% require javascript(themes/stmichaels/js/jquery.prettyPhoto.js) %>
+<% require javascript(themes/stmichaels/js/PPtheme2.js) %>
+
+
 <style type="text/css">
 <!--
 #bibleapDiv {
