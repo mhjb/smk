@@ -54,7 +54,10 @@ body {
 </style>
 <% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
 <% require javascript(themes/stmichaels/js/preload.js) %>
-    
+
+<% require themedCSS(prettyPhoto) %>
+<% require javascript(themes/stmichaels/js/jquery.prettyPhoto.js) %>
+<% require javascript(themes/stmichaels/js/PPtheme1.js) %>    
 		
 </head>
 
