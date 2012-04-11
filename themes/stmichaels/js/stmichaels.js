@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	
+	 
+  $("a[rel^='prettyPhoto']").prettyPhoto();
+  
 	$('#followscrollbox').jScrollPane({
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
@@ -9,10 +11,6 @@ $(document).ready(function(){
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
 	});
-
-  
-			
-		
   
 	$('#photobox').cycle({
 		fx: 	'fade',

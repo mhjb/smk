@@ -9,11 +9,13 @@
 <% require themedCSS(jquery.jscrollpane.lozenge) %>
 <% require themedCSS(typography) %>
 <% require themedCSS(followinglayout) %>
+<% require themedCSS(prettyPhoto) %>
 <% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
 <% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
 <% require javascript(themes/stmichaels/js/jquery.jscrollpane.min.js) %>
 <% require javascript(themes/stmichaels/js/jquery.cycle.lite.js) %>
 <% require javascript(themes/stmichaels/js/preload.js) %>
+<% require javascript(themes/stmichaels/js/jquery.prettyPhoto.js) %>
 <% if URLSegment != Security %>
   <% require javascript(themes/stmichaels/js/stmichaels.js) %>
 <% end_if %>

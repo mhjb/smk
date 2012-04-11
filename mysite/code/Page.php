@@ -55,12 +55,12 @@ class Page extends SiteTree {
 	
     
   
-	function setPPtheme(){	
+	/*function setPPtheme(){	
 		if($this->title == 'Taonga')
 			$pptheme = "dark_square";
 		else $pptheme = "stmichaels";
 		PrettyPhoto::set_theme($pptheme);	
-	}
+	}*/
 	
 	
   // removed "protected function onBeforeWrite() { 	... }"
@@ -104,9 +104,9 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('form');  */
 		
 		//not sure if this is in the right place but it seems to work:		
-		Page::setPPtheme();
+		//Page::setPPtheme();
 		//PrettyPhoto::set_theme($pptheme);
-		PrettyPhoto::include_code();
+		//PrettyPhoto::include_code();
 	}
   
   function results($data, $form){
