@@ -38,12 +38,12 @@ $(document).ready(function(){
 		moreText = $('.moreText'),
 		h6 = $('.typography h6');
 	
-	$("a.small").click(function(event){
+/*	$("a.small").click(function(event){
         event.preventDefault();
 		h5.fadeTo('100', 0);
 		moreText.fadeIn(100);		
 	});	
-	
+*/	
 	$("h6 a").click(function(event){
         event.preventDefault();
 		h5.fadeTo('100', 0);
