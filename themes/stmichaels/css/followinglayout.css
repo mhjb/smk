@@ -1,13 +1,13 @@
 #leftcontent {
 	float: left;
 	/*height: 150px;*/
-	width: 300px;
+	width: 270px;
 	margin-top: 10px;
 }
 #rightcontent {
 	float: right;
 	/*height: 150px;*/
-	width: 590px;
+	width: 620px;
 	margin-top: 10px;
 }
 #morecontent {
@@ -31,7 +31,7 @@
 
 #followscrollbox {
 	height: 130px;
-	width: 575px;
+	width: 605px;
 	overflow:auto;
 	margin-top:15px;
 	padding-right: 15px;

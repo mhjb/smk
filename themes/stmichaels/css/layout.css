@@ -96,7 +96,7 @@ img.left{	margin: 0 10px 10px 0;	}
 #fb-link {
 	position: absolute;
 	right: 84px;
-	top: 342px;
+	top: 335px;
 	z-index: 100;	}
 
 body {
@@ -109,7 +109,7 @@ body {
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
-	padding:20px 15px 15px;
+	padding: 20px 15px 7px 0px;
 }
 #menu .following {
 	margin-left: 60px;
