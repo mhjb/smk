@@ -45,6 +45,11 @@
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
+
+.typography p img.right {
+ 	float: right; 
+ 	margin: 0 0 .5em .5em; }
+
 .typography li {
 	font: normal 14px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #a4998c;

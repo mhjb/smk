@@ -7,12 +7,14 @@ html {
 .left{	float: left;}
 
 img.left{	margin: 0 10px 10px 0;	}
+
+
 	
 #LatestSubPage h2{
 	margin-bottom: 20px;
 }
 
-#LatestSubPage #Content{
+#LatestSubPage #Content {
 	position: absolute;
 	top: 60px;
 	left: 80px;

@@ -14,9 +14,11 @@
 #rightContent img {
 	float: right; }
 
-#leftContent{
-	width: 640px;
+#leftContent {
+	width: 740px;
+	height: 400px;
 	position: absolute;
 	top: 100px;
 	left: 80px;
+	overflow:auto;
 }
