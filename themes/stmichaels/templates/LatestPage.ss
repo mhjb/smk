@@ -75,7 +75,7 @@
 			<% end_control %>
 		</div>
 		
-		<div id="leftContent">
+		<div id="leftContent" class="scrolling">
 			$Layout
 		</div>
 		

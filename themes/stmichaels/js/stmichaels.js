@@ -1,5 +1,9 @@
 $(document).ready(function(){
-  
+  	$('#leftContent').jScrollPane({
+		verticalDragMinHeight: 40,
+		verticalDragMaxHeight: 40,
+	});
+	
 	$('#followscrollbox').jScrollPane({
 		verticalDragMinHeight: 40,
 		verticalDragMaxHeight: 40,
