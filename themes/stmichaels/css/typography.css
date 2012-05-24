@@ -134,16 +134,16 @@
 	margin-bottom: 10px;
 	letter-spacing: 0px;
 }
-	.typography h5 .small {
+.typography h5 .small {
 		font-size: 18px;
 		color: #aeb8d1;
-
-	}
-	/* Use the italic function to show text in a colour */
-	.typography h5 em, .typography h5 em  {
-		font-variant: normal;
+}
+/* Use the italic function to show text in a colour */
+.typography h5 em  {
+		font-style: normal;
 		color: #aeb8d1;
-	}
+}
+
 .typography h6 {
 	font: normal 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #A4998C;
