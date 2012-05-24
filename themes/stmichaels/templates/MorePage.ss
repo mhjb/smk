@@ -102,7 +102,7 @@
         '008170750961698131942:knntxsefvjw', customSearchOptions);
       customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
       var options = new google.search.DrawOptions();
-      options.enableSearchboxOnly("http://localhost/stmichaels/search-results");
+      options.enableSearchboxOnly("http://stmichaels.org.nz/search-results");
       customSearchControl.draw('cse-search-form', options);
     }, true);
   </script>
