@@ -53,7 +53,15 @@ $(document).ready(function(){
 		h5.fadeTo('100', 0);
 		h6.fadeTo('100', 0);
 		moreText.fadeIn(100);		
-	});	
+	});
+
+	$("h5 a.more").click(function(event){
+        event.preventDefault();
+		h5.fadeTo('100', 0);
+		h6.fadeTo('100', 0);
+		moreText.fadeIn(100);		
+	});
+	
 	
 	$('#content').mouseleave(function(){
 		$('.moreText').fadeOut(100);
