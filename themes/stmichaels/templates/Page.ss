@@ -89,8 +89,7 @@
     <% if URLSegment = inside-st-mic-s %>
       <% require javascript(themes/stmichaels/js/swfkrpano.js) %>
       <div id="photobox">       
-        <script>embedpano({target:"photobox",xml:"themes/stmichaels/panorama/index.xml", swf:"themes/stmichaels/panorama/index.swf", width:"900px",height:"300px",allowFullScreen:"true"});</script>
-        <noscript><object width="900px" height="300px"><embed src="themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object></noscript>
+<object width="900px" height="300px"><embed src="themes/stmichaels/panorama/index.swf" width="900px" height="300px" allowFullScreen="true"></embed></object>
       </div>
       
     <% else_if Slideshow %>      
