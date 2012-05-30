@@ -7,18 +7,20 @@
 
 #rightContent ul {
 	direction: rtl; 
-	padding-right: 20px; }
+	padding-right: 40px; }
 #rightContent ul li {
 	text-align: right;}
 
 #rightContent img {
-	float: right; }
+	float: right;
+	margin-right: 20px;  }
 
 #leftContent {
 	width: 740px;
-	height: 400px;
+	height: 430px;
 	position: absolute;
 	top: 100px;
 	left: 80px;
 	overflow:auto;
+	padding-right: 160px; 
 }
