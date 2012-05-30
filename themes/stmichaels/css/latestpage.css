@@ -1,8 +1,8 @@
 #rightContent{
-	/* width: 200px; */
 	position: absolute;
 	top: 100px;
 	right: 70px;
+	z-index: 100; 
 }
 
 #rightContent ul {
