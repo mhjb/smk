@@ -39,11 +39,14 @@
 }
 .typography p {
 	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #a4998c;
+	color: #94897c;
 	text-align: left;
 	overflow: auto;
 	margin-top: 0px;
 	margin-bottom: 10px;
+}
+.typography .narrow {
+	padding-right: 160px;
 }
 
 .typography p img.right {
@@ -113,7 +116,7 @@
 	font-style: italic;
 }
 .typography a {
-	color: #aeb8d1;
+	color: #8e98b1;
 	text-decoration: none;
 }
 .typography a:visited {
@@ -129,7 +132,7 @@
  */
 .typography h5 {
 	font: normal 28px/28px "FrizQuaNo2D", "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #A4998C;
+	color: #94897c;
 	margin-top: 0px;
 	margin-bottom: 10px;
 	letter-spacing: 0px;
