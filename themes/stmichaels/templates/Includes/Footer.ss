@@ -1,6 +1,6 @@
 <div id="footer" class="typography">
   <div class="footertext" id="footerleft"> &copy; $Now.Year St Michael&rsquo;s Anglican Church, Kelburn, Wellington, New Zealand. <br />
-  Designed by <a class="nolink" href="http://www.lilyemo.co.nz">Lily Emo</a>. Implemented by <a class="nolink" href="http://bartlettprojects.com">Bartlett Projects</a>. 
+  Designed by <a class="nolink" href="http://www.lilyemo.co.nz">Lily Emo</a>. Implemented by Bartlett Projects. 
   </div>
   
   
