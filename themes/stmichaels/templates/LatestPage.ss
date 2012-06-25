@@ -94,7 +94,7 @@
 		
 		
 		<div id="snailSign">
-			<!-- <a href="#" title="Roster" id="snailRosterLink">&nbsp;</a> -->
+			<a href="tootle/" title="Download the St Mic's roster (password required)" id="snailRosterLink">&nbsp;</a>
 			<a href="$Top.ThemeDir/images/ssign.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/ssign.png')" rel="prettyPhoto" id="snailSignLink">&nbsp;</a>
 		</div>
 		

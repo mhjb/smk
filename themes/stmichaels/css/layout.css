@@ -255,10 +255,11 @@ hover:#FFF
 
 #snailRosterLink{
 	display: block;
-	width: 180px;
-	height: 100px;
-	margin: 70px 0 0 190px;
-	float: left; }
+	width: 100px;
+	height: 40px;
+	margin: 100px 0 0 230px;
+	float: left; 
+	text-decoration: none; }
 
 #snailSignLink{
 	display: block;
