@@ -126,6 +126,12 @@
 	text-decoration: underline;
 }
 
+.typography .red {
+	color: red; }
+
+.typography .shadow {
+	text-shadow:2px 2px #E0E0D6; }
+
 
 /**
  * These are used for pieces of blurb text at the top of the page
