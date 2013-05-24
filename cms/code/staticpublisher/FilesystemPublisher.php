@@ -50,13 +50,13 @@ class FilesystemPublisher extends StaticPublisher {
 	
 	/**
 	 * @param $destFolder The folder to save the cached site into.
-	 *   This needs to be set in sapphire/static-main.php as well through the {@link $cacheBaseDir} variable.
+	 *   This needs to be set in framework/static-main.php as well through the {@link $cacheBaseDir} variable.
 	 * @param $fileExtension  The file extension to use, e.g 'html'.  
 	 *   If omitted, then each page will be placed in its own directory, 
 	 *   with the filename 'index.html'.  If you set the extension to PHP, then a simple PHP script will
 	 *   be generated that can do appropriate cache & redirect header negotation.
 	 */
-	function __construct($destFolder, $fileExtension = null) {
+	function __construct($destFolder = 'cache', $fileExtension = null) {
 		// Remove trailing slash from folder
 		if(substr($destFolder, -1) == '/') $destFolder = substr($destFolder, 0, -1);
 		
@@ -69,8 +69,12 @@ class FilesystemPublisher extends StaticPublisher {
 	/**
 	 * Transforms relative or absolute URLs to their static path equivalent.
 	 * This needs to be the same logic that's used to look up these paths through
-	 * sapphire/static-main.php. Does not include the {@link $destFolder} prefix.
-	 * Replaces various special characters in the resulting filename similar to {@link SiteTree::generateURLSegment()}.
+	 * framework/static-main.php. Does not include the {@link $destFolder} prefix.
+	 * 
+	 * URL filtering will have already taken place for direct SiteTree links via SiteTree->generateURLSegment()).
+	 * For all other links (e.g. custom controller actions), we assume that they're pre-sanitized
+	 * to suit the filesystem needs, as its impossible to sanitize them without risking to break
+	 * the underlying naming assumptions in URL routing (e.g. controller method names).
 	 * 
 	 * Examples (without $domain_based_caching):
 	 *  - http://mysite.com/mywebroot/ => /index.html (assuming your webroot is in a subfolder)
@@ -89,21 +93,21 @@ class FilesystemPublisher extends StaticPublisher {
 	function urlsToPaths($urls) {
 		$mappedUrls = array();
 		foreach($urls as $url) {
+
+			// parse_url() is not multibyte safe, see https://bugs.php.net/bug.php?id=52923.
+			// We assume that the URL hsa been correctly encoded either on storage (for SiteTree->URLSegment),
+			// or through URL collection (for controller method names etc.).
 			$urlParts = @parse_url($url);
 			
 			// Remove base folders from the URL if webroot is hosted in a subfolder (same as static-main.php)
 			$path = isset($urlParts['path']) ? $urlParts['path'] : '';
-			if(substr(strtolower($path), 0, strlen(BASE_URL)) == strtolower(BASE_URL)) {
-				$urlSegment = substr($path, strlen(BASE_URL));
+			if(mb_substr(mb_strtolower($path), 0, mb_strlen(BASE_URL)) == mb_strtolower(BASE_URL)) {
+				$urlSegment = mb_substr($path, mb_strlen(BASE_URL));
 			} else {
 				$urlSegment = $path;
 			}
 
-			// perform similar transformations to SiteTree::generateURLSegment()
-			$urlSegment = str_replace('&amp;','-and-',$urlSegment);
-			$urlSegment = str_replace('&','-and-',$urlSegment);
-			$urlSegment = ereg_replace('[^A-Za-z0-9\/-]+','-',$urlSegment);
-			$urlSegment = ereg_replace('-+','-',$urlSegment);
+			// Normalize URLs
 			$urlSegment = trim($urlSegment, '/');
 
 			$filename = $urlSegment ? "$urlSegment.$this->fileExtension" : "index.$this->fileExtension";
@@ -187,9 +191,10 @@ class FilesystemPublisher extends StaticPublisher {
 			
 			Requirements::clear();
 			
-			
-			
 			singleton('DataObject')->flushCache();
+
+			//skip any responses with a 404 status code. We don't want to turn those into statically cached pages
+			if (!$response || $response->getStatusCode() == '404') continue;
 
 			// Generate file content			
 			// PHP file caching will generate a simple script from a template
@@ -320,4 +325,3 @@ class FilesystemPublisher extends StaticPublisher {
 	
 }
 
-?>

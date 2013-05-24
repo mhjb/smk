@@ -5,14 +5,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>$Title &ndash; $SiteConfig.Title</title>
 <% require themedCSS(layout) %>
-<% require themedCSS(jquery.jscrollpane) %>
-<% require themedCSS(jquery.jscrollpane.lozenge) %>
+<link rel="stylesheet" type="text/css" href="$ThemeDir/css/layout.css">
+<link rel="stylesheet" type="text/css" href="$ThemeDir/css/jquery.jscrollpane.css">
+<link rel="stylesheet" type="text/css" href="$ThemeDir/css/jquery.jscrollpane.lozenge.css">
 <% require themedCSS(typography) %>
 <% require themedCSS(followinglayout) %>
 
-<% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
-<% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
+<% require javascript(themes/stmichaels/js/jquery-1.8.2.min.js) %>
 <% require javascript(themes/stmichaels/js/jquery.jscrollpane.min.js) %>
+<% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
 <% require javascript(themes/stmichaels/js/jquery.cycle.lite.js) %>
 <% require javascript(themes/stmichaels/js/preload.js) %>
 
@@ -102,19 +103,35 @@
 		$Layout
     	
     	<% if SectionTitle = Following %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkfollowing.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkfollowing.png')" rel="prettyPhoto"></a></div>
+			<div id="snail">
+				<img src="$Top.ThemeDir/images/snailtalkfollowing-shadow.png" style="display:none;" />
+				<img class="bubbleBottom" src="$Top.ThemeDir/images/bubblebottom.png" style="display:none;" />
+				<a href="#" data-bubble="$Top.ThemeDir/images/snailtalkfollowing-shadow.png"></a>
+			</div>
 		<% end_if %>
 
 		<% if SectionTitle = Connecting %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snailtalkconnecting.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snailtalkconnecting.png')" rel="prettyPhoto"></a></div>
+			<div id="snail">
+				<img src="$Top.ThemeDir/images/snailtalkconnecting-shadow.png" style="display:none;" />
+				<img class="bubbleBottom" src="$Top.ThemeDir/images/bubblebottom.png" style="display:none;" />
+				<a href="#" data-bubble="$Top.ThemeDir/images/snailtalkconnecting-shadow.png"></a>
+			</div>
 		<% end_if %>
 
 		<% if SectionTitle = Honouring %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snail_praisebreath.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snail_praisebreath.png')" rel="prettyPhoto"></a></div>
+			<div id="snail">
+				<img src="$Top.ThemeDir/images/snail_praisebreath-shadow.png" style="display:none;" />
+				<img class="bubbleBottom" src="$Top.ThemeDir/images/bubblebottom.png" style="display:none;" />
+				<a href="#" data-bubble="$Top.ThemeDir/images/snail_praisebreath-shadow.png"></a>
+			</div>
 		<% end_if %>
 		
 		<% if SectionTitle = Engaging %>
-			<div id="snail"><a href="$Top.ThemeDir/images/snail_theearth.png" onmouseover="$.prettyPhoto.open('$Top.ThemeDir/images/snail_theearth.png')" rel="prettyPhoto"></a></div>
+			<div id="snail">
+				<img src="$Top.ThemeDir/images/snail_theearth-shadow.png" style="display:none;" />
+				<img class="bubbleBottom" src="$Top.ThemeDir/images/bubblebottom.png" style="display:none;" />
+				<a href="#" data-bubble="$Top.ThemeDir/images/snail_theearth-shadow.png"></a>
+			</div>
 		<% end_if %>		
 		</div>
   </div>

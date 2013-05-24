@@ -1,18 +1,15 @@
+
+
 ### SILVERSTRIPE START ###
 <Files *.ss>
 	Order deny,allow
 	Deny from all
 	Allow from 127.0.0.1
 </Files>
-<Files README.md>
-	Order deny,allow
-	Deny from all
-	Allow from 127.0.0.1
-</Files>
+
 <Files web.config>
 	Order deny,allow
 	Deny from all
-	Allow from 127.0.0.1
 </Files>
 
 ErrorDocument 404 /assets/error-404.html
@@ -25,9 +22,22 @@ ErrorDocument 500 /assets/error-500.html
 <IfModule mod_rewrite.c>
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
+	RewriteBase '/'
 
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule .* sapphire/main.php?url=%1&%{QUERY_STRING} [L]
+	RewriteRule .* framework/main.php?url=%1&%{QUERY_STRING} [L]
 </IfModule>
 ### SILVERSTRIPE END ###
+
+
+
+<filesMatch "\.(pdf)$">
+FileETag None
+<ifModule mod_headers.c>
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</ifModule>
+</filesMatch>

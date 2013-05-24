@@ -41,7 +41,7 @@
 	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: #867E74;
 	text-align: left;
-	overflow: auto;
+	/*overflow: auto;*/
 	margin-top: 0px;
 	margin-bottom: 10px;
 }

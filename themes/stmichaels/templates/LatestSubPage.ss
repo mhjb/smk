@@ -4,14 +4,14 @@
 <% base_tag %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>$Title &ndash; $SiteConfig.Title</title>
-<% require themedCSS(layout) %>
-<% require themedCSS(jquery.jscrollpane) %>
-<% require themedCSS(jquery.jscrollpane.lozenge) %>
+<link rel="stylesheet" type="text/css" href="$ThemeDir/css/layout.css">
+<link rel="stylesheet" type="text/css" href="$ThemeDir/css/jquery.jscrollpane.css">
+<link rel="stylesheet" type="text/css" href="$ThemeDir/css/jquery.jscrollpane.lozenge.css">
 <% require themedCSS(typography) %>
 <% require themedCSS(latestpage) %>
-<% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
-<% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
+<% require javascript(themes/stmichaels/js/jquery-1.8.2.min.js) %>
 <% require javascript(themes/stmichaels/js/jquery.jscrollpane.min.js) %>
+<% require javascript(themes/stmichaels/js/jquery.mousewheel.js) %>
 <% require javascript(themes/stmichaels/js/jquery.cycle.lite.js) %>
 
 <% require javascript(themes/stmichaels/js/stmichaels.js) %>

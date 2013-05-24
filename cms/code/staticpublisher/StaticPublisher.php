@@ -3,7 +3,7 @@
  * @package cms
  * @subpackage publishers
  */
-abstract class StaticPublisher extends DataObjectDecorator {
+abstract class StaticPublisher extends DataExtension {
 	/**
 	 * Defines whether to output information about publishing or not. By 
 	 * default, this is off, and should be turned on when you want debugging 
@@ -26,7 +26,15 @@ abstract class StaticPublisher extends DataObjectDecorator {
 	
 	abstract function publishPages($pages);
 	abstract function unpublishPages($pages);
+
+	static function set_static_publisher_theme($theme){
+		self::$static_publisher_theme=$theme;
+	}
 	
+	static function static_publisher_theme(){
+		return self::$static_publisher_theme;
+	}
+
 	static function echo_progress() {
 		return (boolean)self::$echo_progress;
 	}
@@ -144,14 +152,6 @@ abstract class StaticPublisher extends DataObjectDecorator {
 		
 		return $urls;		
 	}
-	
-	function set_static_publisher_theme($theme){
-		self::$static_publisher_theme=$theme;
-	}
-	
-	function static_publisher_theme(){
-		return self::$static_publisher_theme;
-	}
+
 }
 
-?>

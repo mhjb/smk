@@ -11,7 +11,7 @@ class SectionPage extends RedirectorPage {
 	 */
 	function getCMSFields() {
 		$fields = Page::getCMSFields();
-		$fields->addFieldToTab('Root.Content.Main', new TextField('MoreText'), 'Content');
+		$fields->addFieldToTab('Root.Main', new TextField('MoreText'), 'Content');
 		return $fields;
 	}
 	

@@ -16,11 +16,19 @@
 
 #leftContent {
 	width: 740px;
-	height: 490px;
+	height: 430px;
+	max-height: 490px;
 	position: absolute;
 	top: 100px;
 	left: 80px;
 	overflow:auto;
 	padding-right: 160px;
-	z-index: 100; 
+	/*z-index: 100;*/
 }
+
+/*#leftContent #Content {
+	width: 740px;
+	height: 490px;
+	max-height: 490px;
+	overflow:auto;
+}*/

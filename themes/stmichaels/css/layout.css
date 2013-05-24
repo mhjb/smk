@@ -59,7 +59,11 @@ img.left{	margin: 0 10px 10px 0;	}
 	width: 900px;
 	overflow:auto;
 	margin: 0 auto;
-	padding-rightt: 15px;
+	padding-right: 15px;
+}
+
+#more-page-scrollbox .scrollbox-content {
+	width: 900px;
 }
 
 #box {
@@ -291,4 +295,8 @@ hover:#FFF
 
 .logospace2 {
 	margin-left: 260px;
+}
+
+#Sitemap {
+	height: 280px;
 }

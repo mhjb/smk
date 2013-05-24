@@ -52,7 +52,7 @@ body {
 }
 -->
 </style>
-<% require javascript(sapphire/thirdparty/jquery/jquery.js) %>
+<% require javascript(themes/stmichaels/js/jquery-1.8.2.min.js) %>
 <% require javascript(themes/stmichaels/js/preload.js) %>
 
 <% require themedCSS(prettyPhoto) %>
@@ -79,8 +79,8 @@ body {
 <img src="$ThemeDir/images/titleimage.jpg" alt="St Michael's  Welcome Page" width="1000" height="751" border="0" usemap="#Map2" class="welcomeimage" />
 <map name="Map2" id="Map2">
   <area shape="rect" coords="294,134,709,457" href="main/" alt="Enter to St Mic's Website" />
-  <area shape="circle" coords="883,506,32" onmouseover="$.prettyPhoto.open('$ThemeDir/images/kingdom-of-heaven-maori.jpg')"/>
-  <area shape="poly" coords="616,634,647,632,649,652,641,665,667,713,646,722,608,706,575,672,547,683,524,656,563,650,580,617,590,614,615,634" onmouseover="$.prettyPhoto.open('$ThemeDir/images/kingdom-of-heaven-english.png')" />
+  <area shape="circle" coords="883,506,32" onmouseover="$.prettyPhoto.open('$ThemeDir/images/kingdom-of-heaven-maori-shadow.png')"/>
+  <area shape="poly" coords="616,634,647,632,649,652,641,665,667,713,646,722,608,706,575,672,547,683,524,656,563,650,580,617,590,614,615,634" onmouseover="$.prettyPhoto.open('$ThemeDir/images/kingdom-of-heaven-english-shadow.png')" />
 </map>
 </div>
 </body>

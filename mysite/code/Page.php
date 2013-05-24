@@ -91,6 +91,7 @@ class Page_Controller extends ContentController {
 	 * @var array
 	 */
 	public static $allowed_actions = array (
+		'site-map'
 	);
 
 	public function init() {
@@ -122,7 +123,12 @@ class Page_Controller extends ContentController {
     return $this->customise($data)->renderWith(array('Page_results', 'Page'));
   }
   
-  
+  function getSitemapLink(){
+  	$sitemap = SitemapPage::get()->First();
+  	if($sitemap){
+  		return $sitemap->Link();
+  	}
+  }
 
   
 }

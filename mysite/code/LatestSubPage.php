@@ -3,32 +3,19 @@ class LatestSubPage extends SiteTree {
 
 	public static $db = array(
 	);
+
 	public static $has_one = array(
 	);
-
 
 	function FileList() {
     $html = '';
     $maxdepth = 1;
     $depth = 0;
     
-    $folders = DataObject::get( 
-		  $name = 'File', 
-		  $filter = "ClassName = 'folder' and Filename like 'assets/pdfs/$this->URLSegment/%'", 
-		  $sort = "Created DESC", 
-		  $join = "", 
-		  $limit = "" 
-	  );
+    $folders = File::get()->where("ClassName = 'folder' and Filename like 'assets/pdfs/$this->URLSegment/%'")->sort("Created DESC");
     $folderArr = $folders->toArray();
-    
-    $files = DataObject::get( 
-		  $name = 'File', 
-		  $filter = "ClassName = 'file' and Filename like 'assets/pdfs/$this->URLSegment/%'", 
-		  $sort = "Filename ASC", 
-		  $join = "", 
-		  $limit = "" 
-	  );    
-    
+     
+    $files = File::get()->where("ClassName = 'file' and Filename like 'assets/pdfs/$this->URLSegment/%'")->sort("Filename ASC");
     $filesArr = $files->toArray();
     
     foreach ($folderArr as $folder){
@@ -59,49 +46,10 @@ class LatestSubPage extends SiteTree {
     }    
     
     return "<ul class='fileList'>" . $html . "</ul>";
-    
-
   }
-  
-  /*
-  function FolderList() {
-		return DataObject::get( 
-		  $name = 'Folder', 
-		  $filter = "ClassName = 'folder' and Filename like 'assets/pdfs/$this->URLSegment/%/'", 
-		  $sort = "Created DESC", 
-		  $join = "", 
-		  $limit = "" 
-	   ); 
-	}
-  
-  
-  	<% else_if FolderList %> 
-		<ul class="pdflist"> 
-		  <% control FolderList %> 
-        <li><a href="$Filename">$Title.XML</a></li>
-        <ul>
-        <% control FileList %> 
-          <li><a href="$Filename">$Title.XML</a></li>
-        <% end_control %> 
-        </ul>
-      <% end_control %> 
-		</ul> 
-	<% end_if %>	
-  
-  		<ul class="pdflist"> 
-		  <% control FileList %>      
-        <li><a href="$Filename">$ClassName $Title.XML</a></li>
-      <% end_control %> 
-		</ul> 
-  
-  */
-
-
-
-
-  
 	
 }
+
 class LatestSubPage_Controller extends ContentController {
 	
 }
